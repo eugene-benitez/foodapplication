@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { HttpService } from '../../services/http.service';
-import { newUser } from '../models/newUser';
-import { loginUser } from '../models/loginUser';
+import { newUser } from '../../models/newUser';
+import { loginUser } from '../../models/loginUser';
 
 
 @Component({
@@ -50,7 +50,8 @@ export class LoginRegComponent implements OnInit {
 
           localStorage.setItem('userID', this.returnData._id.toString());
 
-          console.log(localStorage);
+
+          console.log(localStorage.userID);
 
           this.router.navigateByUrl('dashboard')
         }
@@ -61,6 +62,8 @@ export class LoginRegComponent implements OnInit {
       }
       );
   }
+
+
 
 
 }

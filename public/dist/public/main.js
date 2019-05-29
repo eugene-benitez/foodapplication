@@ -301,7 +301,7 @@ var LoginRegComponent = /** @class */ (function () {
             _this.returnData = data;
             if (_this.loginUser.email == _this.returnData.email && _this.loginUser.password == _this.returnData.password) {
                 localStorage.setItem('userID', _this.returnData._id.toString());
-                console.log(localStorage);
+                console.log(localStorage.userID);
                 _this.router.navigateByUrl('dashboard');
             }
             else {
