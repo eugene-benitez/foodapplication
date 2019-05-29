@@ -560,6 +560,7 @@ if(false) {}
 module.exports = __webpack_require__(/*! /Users/andrewquan/Desktop/FoodAppProj/foodapplication/public/src/styles.css */"./src/styles.css");
 
 
+
 /***/ })
 
 },[[3,"runtime"]]]);

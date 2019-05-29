@@ -8,12 +8,14 @@ import { LoginRegComponent } from './common/components/login-reg/login-reg.compo
 import { HttpClientModule } from '@angular/common/http';
 import { DashboardComponent } from './common/components/dashboard/dashboard.component';
 import { HttpService } from './common/services/http.service';
+import { CreateEventComponent } from './common/components/create-event/create-event.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginRegComponent,
-    DashboardComponent
+    DashboardComponent,
+    CreateEventComponent,
   ],
   imports: [
     BrowserModule,
