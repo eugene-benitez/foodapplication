@@ -30,17 +30,35 @@ export class DashboardComponent implements OnInit {
   ) { }
 
   ngOnInit() {
+    this.checkIfLoggedIn();
   }
+
+
+
   form() {
     this.createForm = true;
 
   }
+
+
   cancel() {
     this.createForm = false;
   }
+
+
   createEvent() {
     this.http.addObject(this.createEvent)
       .subscribe((data: createEvent) => this.create = data);
+
+  }
+
+  checkIfLoggedIn() {
+    if (localStorage.length < 1) {
+      this.router.navigateByUrl('');
+    } else {
+      return console.log('You are logged in.');
+    }
+
 
   }
 }

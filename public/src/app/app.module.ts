@@ -10,6 +10,7 @@ import { DashboardComponent } from './common/components/dashboard/dashboard.comp
 import { HttpService } from './common/services/http.service';
 import { MyEventsComponent } from './common/components/my-events/my-events.component';
 import { AboutComponent } from './common/components/about/about.component';
+import { MessageBoardComponent } from './common/components/message-board/message-board.component';
 
 @NgModule({
   declarations: [
@@ -18,6 +19,7 @@ import { AboutComponent } from './common/components/about/about.component';
     DashboardComponent,
     MyEventsComponent,
     AboutComponent,
+    MessageBoardComponent,
   ],
   imports: [
     BrowserModule,
