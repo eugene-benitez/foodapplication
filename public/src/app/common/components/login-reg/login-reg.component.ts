@@ -1,10 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { HttpService } from '../../services/http.service';
-import { newUser } from '../models/newUser';
-import { loginUser } from '../models/loginUser';
+import { newUser } from '../../models/newUser';
+import { loginUser } from '../../models/loginUser';
 
-const bcrypt = require('bcrypt');
 
 @Component({
   selector: 'app-login-reg',
@@ -38,7 +37,6 @@ export class LoginRegComponent implements OnInit {
 
   register() {
     console.log(this.createUser);
-    bcrypt.hash(this.createUser.password, 10)
     this.http.register(this.createUser)
       .subscribe(data => this.returnData = data);
   }
@@ -49,22 +47,20 @@ export class LoginRegComponent implements OnInit {
       .subscribe(data => {
         this.returnData = data;
 
-        bcrypt.compare(this.loginUser.password, this.returnData.password)
-          .then(result => {
+        console.log(data);
 
-            localStorage.setItem('userID', this.returnData._id.toString());
+        if (data) {
+          this.router.navigateByUrl('dashboard')
+        }
 
-            console.log(localStorage);
-
-            this.router.navigateByUrl('dashboard')
-
-
-          })
-          .catch(error => {
-            return console.log("Invalid Login")
-          })
+        else {
+          return;
+        }
       }
       );
   }
+
+
+
 
 }
