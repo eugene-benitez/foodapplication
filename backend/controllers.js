@@ -7,7 +7,6 @@ module.exports = {
 
     login: (req, res) => {
         const loginUser = req.body;
-        const returnedUser = Object;
 
         User.findOne({ email: loginUser.email })
             .then(data => {
