@@ -1,3 +1,4 @@
+<br>
 <div class="container">
   <div class="row">
     <div class="col">
@@ -6,25 +7,30 @@
       <br>
       <form (submit)="register()">
         <div class="form-group">
-          <label for="exampleInputPassword1">first_name</label>
+          <label for="exampleInputPassword1">First Name:</label>
           <input type="first_name" class="form-control" id="exampleInputfirst_name1" placeholder="first_name"
             name="createUser.first_name" [(ngModel)]="createUser.first_name">
+          <small style="color:red">{{UserError.first_name}}</small>
         </div>
         <div class="form-group">
-          <label for="exampleInputPassword1">last_name</label>
+          <label for="exampleInputPassword1">Last Name:</label>
           <input type="last_name" class="form-control" id="exampleInputlast_name1" placeholder="last_name"
             name="createUser.last_name" [(ngModel)]="createUser.last_name">
+          <small style="color:red">{{UserError.last_name}}</small>
         </div>
         <div class="form-group">
-          <label for="exampleInputEmail1">Email address</label>
+          <label for="exampleInputEmail1">Email Address:</label>
           <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
             placeholder="Enter email" name="createUser.email" [(ngModel)]="createUser.email">
           <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+          <small style="color:red">{{UserError.email}}</small>
         </div>
         <div class="form-group">
-          <label for="exampleInputPassword1">Password</label>
+          <label for="exampleInputPassword1">Password:</label>
           <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password"
             name="createUser.password" [(ngModel)]="createUser.password">
+          <small style="color:red">{{UserError.password}}</small>
+          <br>
         </div>
         <button type="submit" class="btn btn-primary">Submit</button>
       </form>
@@ -35,6 +41,7 @@
     <div class="col">
       <h1>Login:</h1>
       <br>
+      <small style="color:red">{{loginError}}</small>
       <form (submit)="login()">
         <div class="form-group">
           <label for="exampleInputEmail1">Email address</label>

@@ -39,7 +39,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _common_components_login_reg_login_reg_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./common/components/login-reg/login-reg.component */ "./src/app/common/components/login-reg/login-reg.component.ts");
 /* harmony import */ var _common_components_dashboard_dashboard_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./common/components/dashboard/dashboard.component */ "./src/app/common/components/dashboard/dashboard.component.ts");
 /* harmony import */ var _common_components_create_event_create_event_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./common/components/create-event/create-event.component */ "./src/app/common/components/create-event/create-event.component.ts");
+
 /* harmony import */ var _common_components_my_events_my_events_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./common/components/my-events/my-events.component */ "./src/app/common/components/my-events/my-events.component.ts");
+
+/* harmony import */ var _common_components_about_about_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./common/components/about/about.component */ "./src/app/common/components/about/about.component.ts");
+
 
 
 
@@ -51,7 +55,10 @@ var routes = [
     { path: '', component: _common_components_login_reg_login_reg_component__WEBPACK_IMPORTED_MODULE_3__["LoginRegComponent"] },
     { path: 'dashboard', component: _common_components_dashboard_dashboard_component__WEBPACK_IMPORTED_MODULE_4__["DashboardComponent"] },
     { path: 'new-event', component: _common_components_create_event_create_event_component__WEBPACK_IMPORTED_MODULE_5__["CreateEventComponent"] },
+
     { path: 'events', component: _common_components_my_events_my_events_component__WEBPACK_IMPORTED_MODULE_6__["MyEventsComponent"] },
+
+    { path: 'about', component: _common_components_about_about_component__WEBPACK_IMPORTED_MODULE_6__["AboutComponent"] },
 ];
 var AppRoutingModule = /** @class */ (function () {
     function AppRoutingModule() {
@@ -88,6 +95,9 @@ module.exports = ".wrapper {\n   background-color: lightsteelblue\n}\n/*# source
 /***/ (function(module, exports) {
 
 module.exports = "<script src=\"https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js\"></script>\n<script src=\"https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js\"></script>\n<link rel=\"stylesheet\" href=\"https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css\">\n<script src=\"https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js\"></script>\n\n\n<!--The content below is only a placeholder and can be replaced.-->\n\n\n\n\n<nav class=\"navbar navbar-expand-sm bg-primary navbar-dark\">\n    <img src=\"/assets/images/ricebowl.png\" height=\"35\" width=\"35\">\n  <button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarSupportedContent\"\n    aria-controls=\"navbarSupportedContent\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">\n    <span class=\"navbar-toggler-icon\"></span>\n  </button>\n  <div class=\"collapse navbar-collapse\" id=\"navbarSupportedContent\">\n    <ul class=\"navbar-nav mr-auto\">\n      <li class=\"nav-item active\">\n        <a class=\"nav-link\" href=\"#\">Home <span class=\"sr-only\">(current)</span></a>\n      </li>\n      <li class=\"nav-item\">\n        <a class=\"nav-link\" href=\"#\">About</a>\n      </li>\n      <li class=\"nav-item\">\n        <a class=\"nav-link\" href=\"#\">Support</a>\n      </li>\n    </ul>\n    <form class=\"form-inline my-2 my-lg-0\">\n      <input class=\"form-control mr-sm-2\" type=\"text\" placeholder=\"Search for food\" aria-label=\"Search\">\n      <button class=\"btn btn-outline-light my-2 my-sm-0\" type=\"submit\">Search</button>\n    </form>\n  </div>\n</nav>\n\n\n<div class=\"footer\">\n  <a href=\"https://linkedin.com\" target=\"_blank\">\n    <img src=\"/assets/images/linkedin.png\" height=\"35\" width=\"35\">\n  </a>\n  <a href=\"https://facebook.com\" target=\"_blank\">\n    <img src=\"/assets/images/facebook.png\" height=\"35\" width=\"35\">\n  </a>\n  <a href=\"https://twitter.com\" target=\"_blank\">\n    <img src=\"/assets/images/twitter.png\" height=\"35\" width=\"35\">\n  </a>\n</div>\n\n<router-outlet></router-outlet>\n"
+
+module.exports = "<link rel=\"stylesheet\" href=\"https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css\">\n<script src=\"https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js\"></script>\n<script src=\"https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js\"></script>\n<script src=\"https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js\"></script>\n\n\n\n<!--The content below is only a placeholder and can be replaced.-->\n\n\n\n\n<nav class=\"navbar navbar-expand-sm bg-primary navbar-dark fixed-top\">\n  <a class=\"navbar-brand\" href=\"#\">YumYum</a>\n  <button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarSupportedContent\"\n    aria-controls=\"navbarSupportedContent\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">\n    <span class=\"navbar-toggler-icon\"></span>\n  </button>\n  <div class=\"collapse navbar-collapse\" id=\"navbarSupportedContent\">\n    <ul class=\"navbar-nav mr-auto\">\n      <li class=\"nav-item active\">\n        <a class=\"nav-link\" href=\"#\">Home <span class=\"sr-only\">(current)</span></a>\n      </li>\n      <li class=\"nav-item\">\n        <a class=\"nav-link\" [routerLink]=\"['/about']\">About</a>\n      </li>\n      <li class=\"nav-item\">\n        <a class=\"nav-link\" href=\"#\">Support</a>\n      </li>\n    </ul>\n    <form class=\"form-inline my-2 my-lg-0\">\n      <input class=\"form-control mr-sm-2\" type=\"text\" placeholder=\"Search for food\" aria-label=\"Search\">\n      <button class=\"btn btn-outline-light my-2 my-sm-0\" type=\"submit\">Search</button>\n    </form>\n  </div>\n</nav><br> <Br> <br>\n\n\n<!-- <div class=\"footer\">\n  <a href=\"https://linkedin.com\" target=\"_blank\">\n    <img src=\"/assets/images/linkedin.png\" height=\"35\" width=\"35\">\n  </a>\n  <a href=\"https://facebook.com\" target=\"_blank\">\n    <img src=\"/assets/images/facebook.png\" height=\"35\" width=\"35\">\n  </a>\n  <a href=\"https://twitter.com\" target=\"_blank\">\n    <img src=\"/assets/images/twitter.png\" height=\"35\" width=\"35\">\n  </a>\n</div> -->\n<router-outlet></router-outlet>\n<!-- Footer -->\n<div class=\"footer\">\n  <footer class=\"page-footer font-small blue pt-4\">\n\n    <!-- Footer Links -->\n    <div class=\"container-fluid text-center text-md-left\">\n\n      <!-- Grid row -->\n      <div class=\"row\">\n\n        <!-- Grid column -->\n        <div class=\"col-md-6 mt-md-0 mt-3\">\n\n          <!-- Content -->\n          <h5 class=\"text-uppercase\">YumYum Incorporated</h5>\n          <p>Copyright\n\n            Content published on this website (digital downloads, images, texts, graphics, logos) is the property of\n            YumYum and/or its content creators and protected by international copyright laws. The entire compilation of\n            the content found on this website is the exclusive property of YumYum, with copyright authorship for this\n            compilation by YumYum.</p>\n\n        </div>\n        <!-- Grid column -->\n\n        <hr class=\"clearfix w-100 d-md-none pb-3\">\n\n        <!-- Grid column -->\n        <div class=\"col-md-3 mb-md-0 mb-3\">\n\n          <!-- Links -->\n          <h5 class=\"text-uppercase\">YumYum Rewards</h5>\n\n          <ul class=\"list-unstyled\">\n            <li>\n              <a href=\"#!\">Join Now</a>\n            </li>\n            <li>\n              <a href=\"#!\">Learn More</a>\n            </li>\n            <li>\n              <a href=\"#!\">Manage Account</a>\n            </li>\n            <a href=\"https://linkedin.com\" target=\"_blank\">\n              <img src=\"/assets/images/linkedin.png\" height=\"25\" width=\"25\">\n            </a>\n            <a href=\"https://facebook.com\" target=\"_blank\">\n              <img src=\"/assets/images/facebook.png\" height=\"25\" width=\"25\">\n            </a>\n            <a href=\"https://twitter.com\" target=\"_blank\">\n              <img src=\"/assets/images/twitter.png\" height=\"25\" width=\"25\">\n            </a>\n          </ul>\n\n        </div>\n        <!-- Grid column -->\n\n        <!-- Grid column -->\n        <div class=\"col-md-3 mb-md-0 mb-3\">\n\n          <!-- Links -->\n          <h5 class=\"text-uppercase\">News & Info</h5>\n\n          <ul class=\"list-unstyled\">\n            <li>\n              <a href=\"#!\">Press Releases</a>\n            </li>\n            <li>\n              <a href=\"#!\">About YumYum</a>\n            </li>\n            <li>\n              <a href=\"#!\">Yum Yum Support</a>\n            </li>\n            <li>\n              <a href=\"#!\">YumYum API</a>\n            </li>\n\n          </ul>\n\n        </div>\n        <!-- Grid column -->\n\n      </div>\n      <!-- Grid row -->\n\n    </div>\n    <!-- Footer Links -->\n\n    <!-- Copyright -->\n    <div class=\"footer-copyright text-center py-3\">© 2018 Copyright:\n      <a href=\"https://mdbootstrap.com/education/bootstrap/\"> YumYum.com</a>\n    </div>\n    <!-- Copyright -->\n\n\n  </footer>\n  <!-- Footer -->\n</div>"
+
 
 /***/ }),
 
@@ -144,7 +154,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _common_components_dashboard_dashboard_component__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./common/components/dashboard/dashboard.component */ "./src/app/common/components/dashboard/dashboard.component.ts");
 /* harmony import */ var _common_services_http_service__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./common/services/http.service */ "./src/app/common/services/http.service.ts");
 /* harmony import */ var _common_components_create_event_create_event_component__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./common/components/create-event/create-event.component */ "./src/app/common/components/create-event/create-event.component.ts");
+
 /* harmony import */ var _common_components_my_events_my_events_component__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./common/components/my-events/my-events.component */ "./src/app/common/components/my-events/my-events.component.ts");
+
+/* harmony import */ var _common_components_about_about_component__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./common/components/about/about.component */ "./src/app/common/components/about/about.component.ts");
+
 
 
 
@@ -166,8 +180,11 @@ var AppModule = /** @class */ (function () {
                 _app_component__WEBPACK_IMPORTED_MODULE_5__["AppComponent"],
                 _common_components_login_reg_login_reg_component__WEBPACK_IMPORTED_MODULE_6__["LoginRegComponent"],
                 _common_components_dashboard_dashboard_component__WEBPACK_IMPORTED_MODULE_8__["DashboardComponent"],
-                _common_components_create_event_create_event_component__WEBPACK_IMPORTED_MODULE_10__["CreateEventComponent"],
+
                 _common_components_my_events_my_events_component__WEBPACK_IMPORTED_MODULE_11__["MyEventsComponent"],
+
+                _common_components_about_about_component__WEBPACK_IMPORTED_MODULE_11__["AboutComponent"],
+
             ],
             imports: [
                 _angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__["BrowserModule"],
@@ -180,6 +197,62 @@ var AppModule = /** @class */ (function () {
         })
     ], AppModule);
     return AppModule;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/common/components/about/about.component.css":
+/*!*************************************************************!*\
+  !*** ./src/app/common/components/about/about.component.css ***!
+  \*************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "body { -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility; font-family: 'Noto Serif', serif; letter-spacing: 0px; font-size: 16px; color: #55595d; font-weight: 400; line-height: 32px; }\nh1, h2, h3, h4, h5, h6 { color: #113d71; margin: 0px 0px 12px 0px; font-family: 'Montserrat', sans-serif; font-weight: 400; line-height: 1; }\nh1 { font-size: 36px; }\nh2 { font-size: 26px; line-height: 38px; }\nh3 { font-size: 22px; line-height: 32px; }\nh4 { font-size: 20px; }\nh5 { font-size: 16px; line-height: 27px; }\nh6 { font-size: 12px; }\np { margin: 0 0 20px; line-height: 1.7; }\np:last-child { margin: 0px; }\nul, ol { font-family: 'Montserrat', sans-serif; }\na { text-decoration: none; color: #55595d; transition: all 0.3s; }\na:focus, a:hover { text-decoration: none; color: #c38d3f; }\n.content{padding-top:80px; padding-bottom:80px;}\n.mb40{margin-bottom:40px;}\n.team-block { }\n.team-img { margin-bottom: 20px; position: relative; }\n.team-img img { width: 100%; }\n.team-img img.border { border-color: #fff !important; }\n.social-media { position: absolute; bottom: 36px; opacity: 0; }\n.social-icon-box { margin-bottom: 5px; background-color: #193e6b; width: 46px; height: 46px; color: #ffffff; font-size: 16px; padding: 15px 19px 26px 16px; display: inline-block; line-height: 1.2; }\n.team-img:hover .social-media { opacity: 1; transition: 2s ease; }\n.team-block.active .social-media { opacity: 1; transition: 2s ease; }\nimg {\n    height: 350px;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvY29tbW9uL2NvbXBvbmVudHMvYWJvdXQvYWJvdXQuY29tcG9uZW50LmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQSxPQUFPLG1DQUFtQyxFQUFFLGtDQUFrQyxFQUFFLGdDQUFnQyxFQUFFLG1CQUFtQixFQUFFLGVBQWUsRUFBRSxjQUFjLEVBQUUsZ0JBQWdCLEVBQUUsaUJBQWlCLEVBQUU7QUFDN00seUJBQXlCLGNBQWMsRUFBRSx3QkFBd0IsRUFBRSxxQ0FBcUMsRUFBRSxnQkFBZ0IsRUFBRSxjQUFjLEVBQUU7QUFDNUksS0FBSyxlQUFlLEVBQUU7QUFDdEIsS0FBSyxlQUFlLEVBQUUsaUJBQWlCLEVBQUU7QUFDekMsS0FBSyxlQUFlLEVBQUUsaUJBQWlCLEVBQUU7QUFDekMsS0FBSyxlQUFlLEVBQUU7QUFDdEIsS0FBSyxlQUFlLEVBQUUsaUJBQWlCLEVBQUU7QUFDekMsS0FBSyxlQUFlLEVBQUU7QUFDdEIsSUFBSSxnQkFBZ0IsRUFBRSxnQkFBZ0IsRUFBRTtBQUN4QyxlQUFlLFdBQVcsRUFBRTtBQUM1QixTQUFTLHFDQUFxQyxFQUFFO0FBQ2hELElBQUkscUJBQXFCLEVBQUUsY0FBYyxFQUEyRCxvQkFBb0IsRUFBRTtBQUMxSCxtQkFBbUIscUJBQXFCLEVBQUUsY0FBYyxFQUFFO0FBQzFELFNBQVMsZ0JBQWdCLEVBQUUsbUJBQW1CLENBQUM7QUFDL0MsTUFBTSxrQkFBa0IsQ0FBQztBQUV6QixjQUFjO0FBQ2QsWUFBWSxtQkFBbUIsRUFBRSxrQkFBa0IsRUFBRTtBQUNyRCxnQkFBZ0IsV0FBVyxFQUFFO0FBQzdCLHVCQUF1Qiw2QkFBNkIsRUFBRTtBQUN0RCxnQkFBZ0Isa0JBQWtCLEVBQUUsWUFBWSxFQUFFLFVBQVUsRUFBRTtBQUM5RCxtQkFBbUIsa0JBQWtCLEVBQUUseUJBQXlCLEVBQUUsV0FBVyxFQUFFLFlBQVksRUFBRSxjQUFjLEVBQUUsZUFBZSxFQUFFLDRCQUE0QixFQUFFLHFCQUFxQixFQUFFLGdCQUFnQixFQUFFO0FBQ3JNLGdDQUFnQyxVQUFVLEVBQUUsbUJBQW1CLEVBQUU7QUFDakUsbUNBQW1DLFVBQVUsRUFBRSxtQkFBbUIsRUFBRTtBQUVwRTtJQUNJLGFBQWE7QUFDakIiLCJmaWxlIjoic3JjL2FwcC9jb21tb24vY29tcG9uZW50cy9hYm91dC9hYm91dC5jb21wb25lbnQuY3NzIiwic291cmNlc0NvbnRlbnQiOlsiYm9keSB7IC13ZWJraXQtZm9udC1zbW9vdGhpbmc6IGFudGlhbGlhc2VkOyB0ZXh0LXJlbmRlcmluZzogb3B0aW1pemVMZWdpYmlsaXR5OyBmb250LWZhbWlseTogJ05vdG8gU2VyaWYnLCBzZXJpZjsgbGV0dGVyLXNwYWNpbmc6IDBweDsgZm9udC1zaXplOiAxNnB4OyBjb2xvcjogIzU1NTk1ZDsgZm9udC13ZWlnaHQ6IDQwMDsgbGluZS1oZWlnaHQ6IDMycHg7IH1cbmgxLCBoMiwgaDMsIGg0LCBoNSwgaDYgeyBjb2xvcjogIzExM2Q3MTsgbWFyZ2luOiAwcHggMHB4IDEycHggMHB4OyBmb250LWZhbWlseTogJ01vbnRzZXJyYXQnLCBzYW5zLXNlcmlmOyBmb250LXdlaWdodDogNDAwOyBsaW5lLWhlaWdodDogMTsgfVxuaDEgeyBmb250LXNpemU6IDM2cHg7IH1cbmgyIHsgZm9udC1zaXplOiAyNnB4OyBsaW5lLWhlaWdodDogMzhweDsgfVxuaDMgeyBmb250LXNpemU6IDIycHg7IGxpbmUtaGVpZ2h0OiAzMnB4OyB9XG5oNCB7IGZvbnQtc2l6ZTogMjBweDsgfVxuaDUgeyBmb250LXNpemU6IDE2cHg7IGxpbmUtaGVpZ2h0OiAyN3B4OyB9XG5oNiB7IGZvbnQtc2l6ZTogMTJweDsgfVxucCB7IG1hcmdpbjogMCAwIDIwcHg7IGxpbmUtaGVpZ2h0OiAxLjc7IH1cbnA6bGFzdC1jaGlsZCB7IG1hcmdpbjogMHB4OyB9XG51bCwgb2wgeyBmb250LWZhbWlseTogJ01vbnRzZXJyYXQnLCBzYW5zLXNlcmlmOyB9XG5hIHsgdGV4dC1kZWNvcmF0aW9uOiBub25lOyBjb2xvcjogIzU1NTk1ZDsgLXdlYmtpdC10cmFuc2l0aW9uOiBhbGwgMC4zczsgLW1vei10cmFuc2l0aW9uOiBhbGwgMC4zczsgdHJhbnNpdGlvbjogYWxsIDAuM3M7IH1cbmE6Zm9jdXMsIGE6aG92ZXIgeyB0ZXh0LWRlY29yYXRpb246IG5vbmU7IGNvbG9yOiAjYzM4ZDNmOyB9XG4uY29udGVudHtwYWRkaW5nLXRvcDo4MHB4OyBwYWRkaW5nLWJvdHRvbTo4MHB4O31cbi5tYjQwe21hcmdpbi1ib3R0b206NDBweDt9XG5cbi50ZWFtLWJsb2NrIHsgfVxuLnRlYW0taW1nIHsgbWFyZ2luLWJvdHRvbTogMjBweDsgcG9zaXRpb246IHJlbGF0aXZlOyB9XG4udGVhbS1pbWcgaW1nIHsgd2lkdGg6IDEwMCU7IH1cbi50ZWFtLWltZyBpbWcuYm9yZGVyIHsgYm9yZGVyLWNvbG9yOiAjZmZmICFpbXBvcnRhbnQ7IH1cbi5zb2NpYWwtbWVkaWEgeyBwb3NpdGlvbjogYWJzb2x1dGU7IGJvdHRvbTogMzZweDsgb3BhY2l0eTogMDsgfVxuLnNvY2lhbC1pY29uLWJveCB7IG1hcmdpbi1ib3R0b206IDVweDsgYmFja2dyb3VuZC1jb2xvcjogIzE5M2U2Yjsgd2lkdGg6IDQ2cHg7IGhlaWdodDogNDZweDsgY29sb3I6ICNmZmZmZmY7IGZvbnQtc2l6ZTogMTZweDsgcGFkZGluZzogMTVweCAxOXB4IDI2cHggMTZweDsgZGlzcGxheTogaW5saW5lLWJsb2NrOyBsaW5lLWhlaWdodDogMS4yOyB9XG4udGVhbS1pbWc6aG92ZXIgLnNvY2lhbC1tZWRpYSB7IG9wYWNpdHk6IDE7IHRyYW5zaXRpb246IDJzIGVhc2U7IH1cbi50ZWFtLWJsb2NrLmFjdGl2ZSAuc29jaWFsLW1lZGlhIHsgb3BhY2l0eTogMTsgdHJhbnNpdGlvbjogMnMgZWFzZTsgfVxuXG5pbWcge1xuICAgIGhlaWdodDogMzUwcHg7XG59Il19 */"
+
+/***/ }),
+
+/***/ "./src/app/common/components/about/about.component.html":
+/*!**************************************************************!*\
+  !*** ./src/app/common/components/about/about.component.html ***!
+  \**************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<link href=\"//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css\" rel=\"stylesheet\" id=\"bootstrap-css\">\n<script src=\"//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js\"></script>\n<script src=\"//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js\"></script>\n<!------ Include the above in your HEAD tag ---------->\n\n<link rel=\"stylesheet\" href=\"https://use.fontawesome.com/releases/v5.0.10/css/all.css\"\n  integrity=\"sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg\" crossorigin=\"anonymous\">\n<div class=\"content\">\n  <div class=\"container\">\n    <div class=\"row\">\n      <div class=\"col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 mb40 text-center\">\n        <h1 class=\"page-title\">Meet the founders of YumYum</h1>\n        <!-- /.section-title -->\n      </div>\n    </div>\n    <div class=\"row\">\n      <!-- team-block -->\n      <div class=\"col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12 mb30\">\n        <div data-aos=\"fade-up\" class=\"team-block\">\n          <div class=\"team-img\">\n            <a href=\"#\">\n              <img src=\"assets/images/moe.jpg\" alt=\"Moe\" class=\"img-fluid\">\n              <div class=\"social-media\">\n                <a href=\"#\" class=\"social-icon-box\"><i class=\"fab fa-facebook-f\"></i></a>\n                <br>\n                <a href=\"#\" class=\"social-icon-box\"><i class=\"fab fa-twitter\"></i></a>\n                <br>\n                <a href=\"#\" class=\"social-icon-box\"><i class=\"fab fa-google-plus-g\"></i></a>\n                <br>\n                <a href=\"#\" class=\"social-icon-box\"><i class=\"fab fa-pinterest-p\"></i></a>\n              </div>\n            </a>\n          </div>\n          <div class=\"team-content\">\n            <h4>Mubarak Al Hmood</h4>\n          </div>\n        </div>\n      </div>\n      <!-- /.team-block -->\n      <!-- team-block -->\n      <div class=\"col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12 mb30\">\n        <div data-aos=\"fade-up\" class=\"team-block\">\n          <div class=\"team-img\">\n            <a href=\"#\">\n              <img src=\"assets/images/gino.jpeg\" alt=\"Gino\" class=\"img-fluid\">\n              <div class=\"social-media\">\n                <a href=\"#\" class=\"social-icon-box\"><i class=\"fab fa-facebook-f\"></i></a>\n                <br>\n                <a href=\"#\" class=\"social-icon-box\"><i class=\"fab fa-twitter\"></i></a>\n                <br>\n                <a href=\"#\" class=\"social-icon-box\"><i class=\"fab fa-google-plus-g\"></i></a>\n                <br>\n                <a href=\"#\" class=\"social-icon-box\"><i class=\"fab fa-pinterest-p\"></i></a>\n              </div>\n            </a>\n          </div>\n          <div class=\"team-content\">\n            <h4>Eugene Benitez </h4>\n          </div>\n        </div>\n      </div>\n      <!-- /.team-block -->\n      <!-- team-block -->\n      <div class=\"col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12 mb30\">\n        <div data-aos=\"fade-up\" class=\"team-block\">\n          <div class=\"team-img\">\n            <a href=\"#\">\n              <img src=\"assets/images/brian.jpeg\" alt=\"Brian\" class=\"img-fluid\">\n              <div class=\"social-media\">\n                <a href=\"#\" class=\"social-icon-box\"><i class=\"fab fa-facebook-f\"></i></a>\n                <br>\n                <a href=\"#\" class=\"social-icon-box\"><i class=\"fab fa-twitter\"></i></a>\n                <br>\n                <a href=\"#\" class=\"social-icon-box\"><i class=\"fab fa-google-plus-g\"></i></a>\n                <br>\n                <a href=\"#\" class=\"social-icon-box\"><i class=\"fab fa-pinterest-p\"></i></a>\n              </div>\n            </a>\n          </div>\n          <div class=\"team-content\">\n            <h4>Brian Kamikawa</h4>\n          </div>\n        </div>\n      </div>\n      <!-- /.team-block -->\n      <!-- team-block -->\n      <div class=\"col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12 mb30\">\n        <div data-aos=\"fade-up\" class=\"team-block\">\n          <div class=\"team-img\">\n            <a href=\"#\">\n              <img src=\"assets/images/andrew.jpeg\" alt=\"Andrew\" class=\"img-fluid\">\n              <div class=\"social-media\">\n                <a href=\"#\" class=\"social-icon-box\"><i class=\"fab fa-facebook-f\"></i></a>\n                <br>\n                <a href=\"#\" class=\"social-icon-box\"><i class=\"fab fa-twitter\"></i></a>\n                <br>\n                <a href=\"#\" class=\"social-icon-box\"><i class=\"fab fa-google-plus-g\"></i></a>\n                <br>\n                <a href=\"#\" class=\"social-icon-box\"><i class=\"fab fa-pinterest-p\"></i></a>\n              </div>\n            </a>\n          </div>\n          <div class=\"team-content\">\n            <h4>Andrew Quan</h4>\n          </div>\n        </div>\n        <!-- /.team-block -->\n      </div>\n\n    </div>\n    <div class=\"row\">\n\n    </div>\n  </div>"
+
+/***/ }),
+
+/***/ "./src/app/common/components/about/about.component.ts":
+/*!************************************************************!*\
+  !*** ./src/app/common/components/about/about.component.ts ***!
+  \************************************************************/
+/*! exports provided: AboutComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AboutComponent", function() { return AboutComponent; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+
+
+var AboutComponent = /** @class */ (function () {
+    function AboutComponent() {
+    }
+    AboutComponent.prototype.ngOnInit = function () {
+    };
+    AboutComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+            selector: 'app-about',
+            template: __webpack_require__(/*! ./about.component.html */ "./src/app/common/components/about/about.component.html"),
+            styles: [__webpack_require__(/*! ./about.component.css */ "./src/app/common/components/about/about.component.css")]
+        }),
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [])
+    ], AboutComponent);
+    return AboutComponent;
 }());
 
 
@@ -297,12 +370,25 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "DashboardComponent", function() { return DashboardComponent; });
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
+/* harmony import */ var _services_http_service__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../services/http.service */ "./src/app/common/services/http.service.ts");
+
+
 
 
 var DashboardComponent = /** @class */ (function () {
-    function DashboardComponent() {
+    function DashboardComponent(router, http) {
+        this.router = router;
+        this.http = http;
     }
     DashboardComponent.prototype.ngOnInit = function () {
+        this.checkLoggedIn();
+        console.log(localStorage);
+    };
+    DashboardComponent.prototype.checkLoggedIn = function () {
+        if (localStorage.length == 0) {
+            this.router.navigateByUrl('');
+        }
     };
     DashboardComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
@@ -310,7 +396,8 @@ var DashboardComponent = /** @class */ (function () {
             template: __webpack_require__(/*! ./dashboard.component.html */ "./src/app/common/components/dashboard/dashboard.component.html"),
             styles: [__webpack_require__(/*! ./dashboard.component.css */ "./src/app/common/components/dashboard/dashboard.component.css")]
         }),
-        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [])
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_angular_router__WEBPACK_IMPORTED_MODULE_2__["Router"],
+            _services_http_service__WEBPACK_IMPORTED_MODULE_3__["HttpService"]])
     ], DashboardComponent);
     return DashboardComponent;
 }());
@@ -337,7 +424,7 @@ module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"container\">\n  <div class=\"row\">\n    <div class=\"col\">\n\n      <h1>Registration:</h1>\n      <br>\n      <form (submit)=\"register()\">\n        <div class=\"form-group\">\n          <label for=\"exampleInputPassword1\">first_name</label>\n          <input type=\"first_name\" class=\"form-control\" id=\"exampleInputfirst_name1\" placeholder=\"first_name\"\n            name=\"createUser.first_name\" [(ngModel)]=\"createUser.first_name\">\n        </div>\n        <div class=\"form-group\">\n          <label for=\"exampleInputPassword1\">last_name</label>\n          <input type=\"last_name\" class=\"form-control\" id=\"exampleInputlast_name1\" placeholder=\"last_name\"\n            name=\"createUser.last_name\" [(ngModel)]=\"createUser.last_name\">\n        </div>\n        <div class=\"form-group\">\n          <label for=\"exampleInputEmail1\">Email address</label>\n          <input type=\"email\" class=\"form-control\" id=\"exampleInputEmail1\" aria-describedby=\"emailHelp\"\n            placeholder=\"Enter email\" name=\"createUser.email\" [(ngModel)]=\"createUser.email\">\n          <small id=\"emailHelp\" class=\"form-text text-muted\">We'll never share your email with anyone else.</small>\n        </div>\n        <div class=\"form-group\">\n          <label for=\"exampleInputPassword1\">Password</label>\n          <input type=\"password\" class=\"form-control\" id=\"exampleInputPassword1\" placeholder=\"Password\"\n            name=\"createUser.password\" [(ngModel)]=\"createUser.password\">\n        </div>\n        <button type=\"submit\" class=\"btn btn-primary\">Submit</button>\n      </form>\n\n    </div>\n\n\n    <div class=\"col\">\n      <h1>Login:</h1>\n      <br>\n      <form (submit)=\"login()\">\n        <div class=\"form-group\">\n          <label for=\"exampleInputEmail1\">Email address</label>\n          <input type=\"email\" class=\"form-control\" aria-describedby=\"emailHelp\" placeholder=\"Enter email\"\n            name=\"loginUser.email\" [(ngModel)]=\"loginUser.email\">\n          <small id=\"emailHelp\" class=\"form-text text-muted\">We'll never share your email with anyone else.</small>\n        </div>\n        <div class=\"form-group\">\n          <label for=\"exampleInputPassword1\">Password</label>\n          <input type=\"password\" class=\"form-control\" placeholder=\"Password\" name=\"loginUser.password\"\n            [(ngModel)]=\"loginUser.password\">\n        </div>\n        <button type=\"submit\" class=\"btn btn-primary\">Login</button>\n      </form>\n    </div>\n\n\n  </div>\n</div>"
+module.exports = "<br>\n<div class=\"container\">\n  <div class=\"row\">\n    <div class=\"col\">\n\n      <h1>Registration:</h1>\n      <br>\n      <form (submit)=\"register()\">\n        <div class=\"form-group\">\n          <label for=\"exampleInputPassword1\">First Name:</label>\n          <input type=\"first_name\" class=\"form-control\" id=\"exampleInputfirst_name1\" placeholder=\"first_name\"\n            name=\"createUser.first_name\" [(ngModel)]=\"createUser.first_name\">\n          <small style=\"color:red\">{{UserError.first_name}}</small>\n        </div>\n        <div class=\"form-group\">\n          <label for=\"exampleInputPassword1\">Last Name:</label>\n          <input type=\"last_name\" class=\"form-control\" id=\"exampleInputlast_name1\" placeholder=\"last_name\"\n            name=\"createUser.last_name\" [(ngModel)]=\"createUser.last_name\">\n          <small style=\"color:red\">{{UserError.last_name}}</small>\n        </div>\n        <div class=\"form-group\">\n          <label for=\"exampleInputEmail1\">Email Address:</label>\n          <input type=\"email\" class=\"form-control\" id=\"exampleInputEmail1\" aria-describedby=\"emailHelp\"\n            placeholder=\"Enter email\" name=\"createUser.email\" [(ngModel)]=\"createUser.email\">\n          <small id=\"emailHelp\" class=\"form-text text-muted\">We'll never share your email with anyone else.</small>\n          <small style=\"color:red\">{{UserError.email}}</small>\n        </div>\n        <div class=\"form-group\">\n          <label for=\"exampleInputPassword1\">Password:</label>\n          <input type=\"password\" class=\"form-control\" id=\"exampleInputPassword1\" placeholder=\"Password\"\n            name=\"createUser.password\" [(ngModel)]=\"createUser.password\">\n          <small style=\"color:red\">{{UserError.password}}</small>\n          <br>\n        </div>\n        <button type=\"submit\" class=\"btn btn-primary\">Submit</button>\n      </form>\n\n    </div>\n\n\n    <div class=\"col\">\n      <h1>Login:</h1>\n      <br>\n      <small style=\"color:red\">{{loginError}}</small>\n      <form (submit)=\"login()\">\n        <div class=\"form-group\">\n          <label for=\"exampleInputEmail1\">Email address</label>\n          <input type=\"email\" class=\"form-control\" aria-describedby=\"emailHelp\" placeholder=\"Enter email\"\n            name=\"loginUser.email\" [(ngModel)]=\"loginUser.email\">\n          <small id=\"emailHelp\" class=\"form-text text-muted\">We'll never share your email with anyone else.</small>\n        </div>\n        <div class=\"form-group\">\n          <label for=\"exampleInputPassword1\">Password</label>\n          <input type=\"password\" class=\"form-control\" placeholder=\"Password\" name=\"loginUser.password\"\n            [(ngModel)]=\"loginUser.password\">\n        </div>\n        <button type=\"submit\" class=\"btn btn-primary\">Login</button>\n      </form>\n    </div>\n\n\n  </div>\n</div>"
 
 /***/ }),
 
@@ -373,14 +460,36 @@ var LoginRegComponent = /** @class */ (function () {
             email: '',
             password: '',
         };
+        this.UserError = {
+            first_name: '',
+            last_name: '',
+            email: '',
+            password: '',
+        };
     }
     LoginRegComponent.prototype.ngOnInit = function () {
+        localStorage.clear();
     };
     LoginRegComponent.prototype.register = function () {
         var _this = this;
         console.log(this.createUser);
         this.http.register(this.createUser)
-            .subscribe(function (data) { return _this.returnData = data; });
+            .subscribe(function (data) {
+            _this.UserError = {
+                first_name: '',
+                last_name: '',
+                email: '',
+                password: '',
+            };
+            if (!data['errors']) {
+                _this.router.navigateByUrl('');
+            }
+            else {
+                for (var k in data['errors']) {
+                    _this.UserError[k] = data['errors'][k]['message'];
+                }
+            }
+        });
     };
     LoginRegComponent.prototype.login = function () {
         var _this = this;
@@ -388,12 +497,15 @@ var LoginRegComponent = /** @class */ (function () {
         this.http.login(this.loginUser)
             .subscribe(function (data) {
             _this.returnData = data;
-            if (_this.loginUser.email == _this.returnData.email && _this.loginUser.password == _this.returnData.password) {
-                localStorage.setItem('userID', _this.returnData._id.toString());
-                console.log(localStorage.userID);
+            if (_this.returnData.password) {
+                console.log(data);
+                console.log("Login success!");
+                localStorage.setItem('user._id', _this.returnData._id);
+                console.log(localStorage);
                 _this.router.navigateByUrl('dashboard');
             }
             else {
+                _this.loginError = "Invalid Login.";
                 return console.log("Invalid Login");
             }
         });
@@ -580,7 +692,6 @@ Object(_angular_platform_browser_dynamic__WEBPACK_IMPORTED_MODULE_1__["platformB
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__(/*! /Users/toshiro/Desktop/FoodAppProj/foodapplication/public/src/main.ts */"./src/main.ts");
-
 
 /***/ })
 
