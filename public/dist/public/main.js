@@ -40,6 +40,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _common_components_dashboard_dashboard_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./common/components/dashboard/dashboard.component */ "./src/app/common/components/dashboard/dashboard.component.ts");
 /* harmony import */ var _common_components_my_events_my_events_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./common/components/my-events/my-events.component */ "./src/app/common/components/my-events/my-events.component.ts");
 /* harmony import */ var _common_components_about_about_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./common/components/about/about.component */ "./src/app/common/components/about/about.component.ts");
+/* harmony import */ var _common_components_message_board_message_board_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./common/components/message-board/message-board.component */ "./src/app/common/components/message-board/message-board.component.ts");
+
 
 
 
@@ -52,6 +54,7 @@ var routes = [
     { path: 'dashboard', component: _common_components_dashboard_dashboard_component__WEBPACK_IMPORTED_MODULE_4__["DashboardComponent"] },
     { path: 'events', component: _common_components_my_events_my_events_component__WEBPACK_IMPORTED_MODULE_5__["MyEventsComponent"] },
     { path: 'about', component: _common_components_about_about_component__WEBPACK_IMPORTED_MODULE_6__["AboutComponent"] },
+    { path: 'messageboard', component: _common_components_message_board_message_board_component__WEBPACK_IMPORTED_MODULE_7__["MessageBoardComponent"] }
 ];
 var AppRoutingModule = /** @class */ (function () {
     function AppRoutingModule() {
@@ -87,7 +90,7 @@ module.exports = ".wrapper {\n   background-color: lightsteelblue\n}\n/*# source
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<nav class=\"navbar navbar-expand-sm bg-primary navbar-dark fixed-top\">\n  <img src=\"/assets/images/ricebowl.png\" height=\"35\" width=\"35\">\n\n  <button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarSupportedContent\"\n    aria-controls=\"navbarSupportedContent\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">\n    <span class=\"navbar-toggler-icon\"></span>\n  </button>\n  <div class=\"collapse navbar-collapse\" id=\"navbarSupportedContent\">\n    <ul class=\"navbar-nav mr-auto\">\n      <li class=\"nav-item active\">\n        <a class=\"nav-link\" [routerLink]=\"['/dashboard']\">Home <span class=\"sr-only\">(current)</span></a>\n      </li>\n      <li class=\"nav-item\">\n        <a class=\"nav-link\" [routerLink]=\"['/about']\">About</a>\n      </li>\n      <li class=\"nav-item\">\n        <a class=\"nav-link\" href=\"#\">Support</a>\n      </li>\n      <li class=\"nav-item\">\n        <a class=\"nav-link\" href=\"/\">Logout</a>\n      </li>\n    </ul>\n    <form class=\"form-inline my-2 my-lg-0\">\n      <input class=\"form-control mr-sm-2\" type=\"text\" placeholder=\"Search for food\" aria-label=\"Search\">\n      <button class=\"btn btn-outline-light my-2 my-sm-0\" type=\"submit\">Search</button>\n    </form>\n  </div>\n</nav><br> <Br>\n\n<router-outlet></router-outlet>\n<!-- Footer -->\n<div class=\"footer\">\n  <footer class=\"page-footer font-small blue pt-4\">\n\n    <!-- Footer Links -->\n    <div class=\"container-fluid text-center text-md-left\">\n\n      <!-- Grid row -->\n      <div class=\"row\">\n\n        <!-- Grid column -->\n        <div class=\"col-md-6 mt-md-0 mt-3\">\n\n          <!-- Content -->\n          <h5 class=\"text-uppercase\">YumYum Incorporated</h5>\n          <p>Copyright\n\n            Content published on this website (digital downloads, images, texts, graphics, logos) is the property of\n            YumYum and/or its content creators and protected by international copyright laws. The entire compilation of\n            the content found on this website is the exclusive property of YumYum, with copyright authorship for this\n            compilation by YumYum.</p>\n\n        </div>\n        <!-- Grid column -->\n\n        <hr class=\"clearfix w-100 d-md-none pb-3\">\n\n        <!-- Grid column -->\n        <div class=\"col-md-3 mb-md-0 mb-3\">\n\n          <!-- Links -->\n          <h5 class=\"text-uppercase\">YumYum Rewards</h5>\n\n          <ul class=\"list-unstyled\">\n            <li>\n              <a href=\"#!\">Join Now</a>\n            </li>\n            <li>\n              <a href=\"#!\">Learn More</a>\n            </li>\n            <li>\n              <a href=\"#!\">Manage Account</a>\n            </li>\n            <a href=\"https://linkedin.com\" target=\"_blank\">\n              <img src=\"/assets/images/linkedin.png\" height=\"25\" width=\"25\">\n            </a>\n            <a href=\"https://facebook.com\" target=\"_blank\">\n              <img src=\"/assets/images/facebook.png\" height=\"25\" width=\"25\">\n            </a>\n            <a href=\"https://twitter.com\" target=\"_blank\">\n              <img src=\"/assets/images/twitter.png\" height=\"25\" width=\"25\">\n            </a>\n          </ul>\n\n        </div>\n        <!-- Grid column -->\n\n        <!-- Grid column -->\n        <div class=\"col-md-3 mb-md-0 mb-3\">\n\n          <!-- Links -->\n          <h5 class=\"text-uppercase\">News & Info</h5>\n\n          <ul class=\"list-unstyled\">\n            <li>\n              <a href=\"#!\">Press Releases</a>\n            </li>\n            <li>\n              <a href=\"#!\">About YumYum</a>\n            </li>\n            <li>\n              <a href=\"#!\">Yum Yum Support</a>\n            </li>\n            <li>\n              <a href=\"#!\">YumYum API</a>\n            </li>\n\n          </ul>\n\n        </div>\n        <!-- Grid column -->\n\n      </div>\n      <!-- Grid row -->\n\n    </div>\n    <!-- Footer Links -->\n\n    <!-- Copyright -->\n    <div class=\"footer-copyright text-center py-3\">© 2018 Copyright:\n      <a href=\"https://mdbootstrap.com/education/bootstrap/\"> YumYum.com</a>\n    </div>\n    <!-- Copyright -->\n\n  </footer>\n  <!-- Footer -->\n</div>\n\n\n<link rel=\"stylesheet\" href=\"https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css\">\n<script src=\"https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js\"></script>\n<script src=\"https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js\"></script>"
+module.exports = "<nav class=\"navbar navbar-expand-sm bg-primary navbar-dark fixed-top\">\n  <img src=\"/assets/images/ricebowl.png\" height=\"35\" width=\"35\">\n\n  <button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarSupportedContent\"\n    aria-controls=\"navbarSupportedContent\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">\n    <span class=\"navbar-toggler-icon\"></span>\n  </button>\n  <div class=\"collapse navbar-collapse\" id=\"navbarSupportedContent\">\n    <ul class=\"navbar-nav mr-auto\">\n      <li class=\"nav-item active\">\n        <a class=\"nav-link\" [routerLink]=\"['/dashboard']\">Home <span class=\"sr-only\">(current)</span></a>\n      </li>\n      <li class=\"nav-item\">\n        <a class=\"nav-link\" [routerLink]=\"['/about']\">About</a>\n      </li>\n      <li class=\"nav-item\">\n        <a class=\"nav-link\" href=\"#\">Support</a>\n      </li>\n      <li class=\"nav-item\">\n        <a class=\"nav-link\" [routerLink]=\"['/messageboard']\">Message Board</a>\n      </li>\n      <li class=\"nav-item\">\n        <a class=\"nav-link\" href=\"/\">Logout</a>\n      </li>\n    </ul>\n    <form class=\"form-inline my-2 my-lg-0\">\n      <input class=\"form-control mr-sm-2\" type=\"text\" placeholder=\"Search for food\" aria-label=\"Search\">\n      <button class=\"btn btn-outline-light my-2 my-sm-0\" type=\"submit\">Search</button>\n    </form>\n  </div>\n</nav><br> <Br>\n\n<router-outlet></router-outlet>\n<!-- Footer -->\n<div class=\"footer\">\n  <footer class=\"page-footer font-small blue pt-4\">\n\n    <!-- Footer Links -->\n    <div class=\"container-fluid text-center text-md-left\">\n\n      <!-- Grid row -->\n      <div class=\"row\">\n\n        <!-- Grid column -->\n        <div class=\"col-md-6 mt-md-0 mt-3\">\n\n          <!-- Content -->\n          <h5 class=\"text-uppercase\">YumYum Incorporated</h5>\n          <p>Copyright\n\n            Content published on this website (digital downloads, images, texts, graphics, logos) is the property of\n            YumYum and/or its content creators and protected by international copyright laws. The entire compilation of\n            the content found on this website is the exclusive property of YumYum, with copyright authorship for this\n            compilation by YumYum.</p>\n\n        </div>\n        <!-- Grid column -->\n\n        <hr class=\"clearfix w-100 d-md-none pb-3\">\n\n        <!-- Grid column -->\n        <div class=\"col-md-3 mb-md-0 mb-3\">\n\n          <!-- Links -->\n          <h5 class=\"text-uppercase\">YumYum Rewards</h5>\n\n          <ul class=\"list-unstyled\">\n            <li>\n              <a href=\"#!\">Join Now</a>\n            </li>\n            <li>\n              <a href=\"#!\">Learn More</a>\n            </li>\n            <li>\n              <a href=\"#!\">Manage Account</a>\n            </li>\n            <a href=\"https://linkedin.com\" target=\"_blank\">\n              <img src=\"/assets/images/linkedin.png\" height=\"25\" width=\"25\">\n            </a>\n            <a href=\"https://facebook.com\" target=\"_blank\">\n              <img src=\"/assets/images/facebook.png\" height=\"25\" width=\"25\">\n            </a>\n            <a href=\"https://twitter.com\" target=\"_blank\">\n              <img src=\"/assets/images/twitter.png\" height=\"25\" width=\"25\">\n            </a>\n          </ul>\n\n        </div>\n        <!-- Grid column -->\n\n        <!-- Grid column -->\n        <div class=\"col-md-3 mb-md-0 mb-3\">\n\n          <!-- Links -->\n          <h5 class=\"text-uppercase\">News & Info</h5>\n\n          <ul class=\"list-unstyled\">\n            <li>\n              <a href=\"#!\">Press Releases</a>\n            </li>\n            <li>\n              <a href=\"#!\">About YumYum</a>\n            </li>\n            <li>\n              <a href=\"#!\">Yum Yum Support</a>\n            </li>\n            <li>\n              <a href=\"#!\">YumYum API</a>\n            </li>\n\n          </ul>\n\n        </div>\n        <!-- Grid column -->\n\n      </div>\n      <!-- Grid row -->\n\n    </div>\n    <!-- Footer Links -->\n\n    <!-- Copyright -->\n    <div class=\"footer-copyright text-center py-3\">© 2018 Copyright:\n      <a href=\"https://mdbootstrap.com/education/bootstrap/\"> YumYum.com</a>\n    </div>\n    <!-- Copyright -->\n\n  </footer>\n  <!-- Footer -->\n</div>\n\n\n<link rel=\"stylesheet\" href=\"https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css\">\n<script src=\"https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js\"></script>\n<script src=\"https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js\"></script>\n<script src=\"https://kit.fontawesome.com/35ff38dbef.js\"></script>"
 
 /***/ }),
 
@@ -145,6 +148,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _common_services_http_service__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./common/services/http.service */ "./src/app/common/services/http.service.ts");
 /* harmony import */ var _common_components_my_events_my_events_component__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./common/components/my-events/my-events.component */ "./src/app/common/components/my-events/my-events.component.ts");
 /* harmony import */ var _common_components_about_about_component__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./common/components/about/about.component */ "./src/app/common/components/about/about.component.ts");
+/* harmony import */ var _common_components_message_board_message_board_component__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./common/components/message-board/message-board.component */ "./src/app/common/components/message-board/message-board.component.ts");
+
 
 
 
@@ -168,6 +173,7 @@ var AppModule = /** @class */ (function () {
                 _common_components_dashboard_dashboard_component__WEBPACK_IMPORTED_MODULE_8__["DashboardComponent"],
                 _common_components_my_events_my_events_component__WEBPACK_IMPORTED_MODULE_10__["MyEventsComponent"],
                 _common_components_about_about_component__WEBPACK_IMPORTED_MODULE_11__["AboutComponent"],
+                _common_components_message_board_message_board_component__WEBPACK_IMPORTED_MODULE_12__["MessageBoardComponent"],
             ],
             imports: [
                 _angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__["BrowserModule"],
@@ -298,6 +304,7 @@ var DashboardComponent = /** @class */ (function () {
         };
     }
     DashboardComponent.prototype.ngOnInit = function () {
+        this.checkIfLoggedIn();
     };
     DashboardComponent.prototype.form = function () {
         this.createForm = true;
@@ -309,6 +316,14 @@ var DashboardComponent = /** @class */ (function () {
         var _this = this;
         this.http.addObject(this.createEvent)
             .subscribe(function (data) { return _this.create = data; });
+    };
+    DashboardComponent.prototype.checkIfLoggedIn = function () {
+        if (localStorage.length < 1) {
+            this.router.navigateByUrl('');
+        }
+        else {
+            return console.log('You are logged in.');
+        }
     };
     DashboardComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
@@ -440,6 +455,89 @@ var LoginRegComponent = /** @class */ (function () {
             _services_http_service__WEBPACK_IMPORTED_MODULE_3__["HttpService"]])
     ], LoginRegComponent);
     return LoginRegComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/common/components/message-board/message-board.component.css":
+/*!*****************************************************************************!*\
+  !*** ./src/app/common/components/message-board/message-board.component.css ***!
+  \*****************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2NvbW1vbi9jb21wb25lbnRzL21lc3NhZ2UtYm9hcmQvbWVzc2FnZS1ib2FyZC5jb21wb25lbnQuY3NzIn0= */"
+
+/***/ }),
+
+/***/ "./src/app/common/components/message-board/message-board.component.html":
+/*!******************************************************************************!*\
+  !*** ./src/app/common/components/message-board/message-board.component.html ***!
+  \******************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<br>\n<br>\n<div class=\"container\">\n  <div class=\"row\">\n    <div class=\"col\">\n      <p *ngFor=\"let s of stateList\"><button\n          class=\"border border-primary rounded bg-primary text-white align-self-center\" href=\"\">{{s}}</button></p>\n    </div>\n    <div class=\"col-6\">\n      <h1 class=\"text-primary text-center\">California Yumyum Forums</h1>\n      <br>\n      <div (click)=\"showAllComment()\" class=\"border border-primary rounded bg-primary text-white align-self-center\"\n        style=\"padding: 10px;\">\n\n        <h5>Best place in Orange County??<small style=\"margin-left: 20px; margin-right:10PX;\">by: Joe Snuffy\n          </small><button class=\"border-primary bg-primary text-white\">↑</button>\n          <button class=\"border-primary bg-primary text-white\">↓</button>\n        </h5>\n      </div>\n      <div *ngIf=\" showComments==true\" class=\"border border-success rounded bg-success text-white align-self-center\"\n        style=\"padding: 10px; margin-left: 20px;\">\n        <h6 style=\"margin-left: 20px;\"> I disagree. Have you tried Din Tai Fung? <small style=\"margin-left: 20px;\">by:\n            Jon Stark</small><button class=\"border-success bg-success text-white\">↑</button>\n          <button class=\"border-success bg-success text-white\">↓</button>\n        </h6>\n        <hr>\n        <h6 style=\"margin-left: 20px;\"> I think it's Taco Maria in Cost Mesa. <small style=\"margin-left: 20px;\">by:\n            Andy Warg</small><button class=\"border-success bg-success text-white\">↑</button>\n          <button class=\"border-success bg-success text-white\">↓</button><br><br>\n          <button class=\"border rounded border-danger bg-danger text-white\">Reply</button>\n        </h6>\n      </div>\n    </div>\n    <div class=\"col\">\n    </div>\n  </div>\n  <div class=\"row\">\n  </div>\n</div>"
+
+/***/ }),
+
+/***/ "./src/app/common/components/message-board/message-board.component.ts":
+/*!****************************************************************************!*\
+  !*** ./src/app/common/components/message-board/message-board.component.ts ***!
+  \****************************************************************************/
+/*! exports provided: MessageBoardComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "MessageBoardComponent", function() { return MessageBoardComponent; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
+/* harmony import */ var _services_http_service__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../services/http.service */ "./src/app/common/services/http.service.ts");
+
+
+
+
+var MessageBoardComponent = /** @class */ (function () {
+    function MessageBoardComponent(router, http) {
+        this.router = router;
+        this.http = http;
+        this.showComments = false;
+        this.stateList = new Array("AK", "AL", "AR", "AZ", "CA", "CO", "CT", "DC", "DE", "FL", "GA", "GU", "HI", "IA", "ID", "IL", "IN", "KS", "KY", "LA", "MA", "MD", "ME", "MH", "MI", "MN", "MO", "MS", "MT", "NC", "ND", "NE", "NH", "NJ", "NM", "NV", "NY", "OH", "OK", "OR", "PA", "PR", "PW", "RI", "SC", "SD", "TN", "TX", "UT", "VA", "VI", "VT", "WA", "WI", "WV", "WY");
+    }
+    MessageBoardComponent.prototype.ngOnInit = function () {
+        this.checkIfLoggedIn();
+    };
+    MessageBoardComponent.prototype.checkIfLoggedIn = function () {
+        if (localStorage.length < 1) {
+            this.router.navigateByUrl('');
+        }
+        else {
+            return console.log('You are logged in.');
+        }
+    };
+    MessageBoardComponent.prototype.showAllComment = function () {
+        if (this.showComments == false) {
+            this.showComments = true;
+            console.log(this.showAllComment);
+        }
+        else {
+            this.showComments = false;
+        }
+    };
+    MessageBoardComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+            selector: 'app-message-board',
+            template: __webpack_require__(/*! ./message-board.component.html */ "./src/app/common/components/message-board/message-board.component.html"),
+            styles: [__webpack_require__(/*! ./message-board.component.css */ "./src/app/common/components/message-board/message-board.component.css")]
+        }),
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_angular_router__WEBPACK_IMPORTED_MODULE_2__["Router"],
+            _services_http_service__WEBPACK_IMPORTED_MODULE_3__["HttpService"]])
+    ], MessageBoardComponent);
+    return MessageBoardComponent;
 }());
 
 
@@ -611,7 +709,7 @@ Object(_angular_platform_browser_dynamic__WEBPACK_IMPORTED_MODULE_1__["platformB
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! /Users/andrewquan/Desktop/FoodAppProj/foodapplication/public/src/main.ts */"./src/main.ts");
+module.exports = __webpack_require__(/*! /Users/eugenebenitez/Desktop/MEAN_Stack/Angular/foodapplication/public/src/main.ts */"./src/main.ts");
 
 
 /***/ })

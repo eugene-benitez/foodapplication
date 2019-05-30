@@ -1,0 +1,39 @@
+<br>
+<br>
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <p *ngFor="let s of stateList"><button
+          class="border border-primary rounded bg-primary text-white align-self-center" href="">{{s}}</button></p>
+    </div>
+    <div class="col-6">
+      <h1 class="text-primary text-center">California Yumyum Forums</h1>
+      <br>
+      <div (click)="showAllComment()" class="border border-primary rounded bg-primary text-white align-self-center"
+        style="padding: 10px;">
+
+        <h5>Best place in Orange County??<small style="margin-left: 20px; margin-right:10PX;">by: Joe Snuffy
+          </small><button class="border-primary bg-primary text-white">↑</button>
+          <button class="border-primary bg-primary text-white">↓</button>
+        </h5>
+      </div>
+      <div *ngIf=" showComments==true" class="border border-success rounded bg-success text-white align-self-center"
+        style="padding: 10px; margin-left: 20px;">
+        <h6 style="margin-left: 20px;"> I disagree. Have you tried Din Tai Fung? <small style="margin-left: 20px;">by:
+            Jon Stark</small><button class="border-success bg-success text-white">↑</button>
+          <button class="border-success bg-success text-white">↓</button>
+        </h6>
+        <hr>
+        <h6 style="margin-left: 20px;"> I think it's Taco Maria in Cost Mesa. <small style="margin-left: 20px;">by:
+            Andy Warg</small><button class="border-success bg-success text-white">↑</button>
+          <button class="border-success bg-success text-white">↓</button><br><br>
+          <button class="border rounded border-danger bg-danger text-white">Reply</button>
+        </h6>
+      </div>
+    </div>
+    <div class="col">
+    </div>
+  </div>
+  <div class="row">
+  </div>
+</div>
