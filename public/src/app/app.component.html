@@ -1,7 +1,8 @@
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
 
 
 <!--The content below is only a placeholder and can be replaced.-->
@@ -9,7 +10,7 @@
 
 
 
-<nav class="navbar navbar-expand-sm bg-primary navbar-dark">
+<nav class="navbar navbar-expand-sm bg-primary navbar-dark fixed-top">
   <a class="navbar-brand" href="#">YumYum</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
     aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -21,7 +22,7 @@
         <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">About</a>
+        <a class="nav-link" [routerLink]="['/about']">About</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="#">Support</a>
@@ -32,10 +33,10 @@
       <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
     </form>
   </div>
-</nav>
+</nav><br> <Br> <br>
 
 
-<div class="footer">
+<!-- <div class="footer">
   <a href="https://linkedin.com" target="_blank">
     <img src="/assets/images/linkedin.png" height="35" width="35">
   </a>
@@ -45,6 +46,103 @@
   <a href="https://twitter.com" target="_blank">
     <img src="/assets/images/twitter.png" height="35" width="35">
   </a>
-</div>
-
+</div> -->
 <router-outlet></router-outlet>
+<!-- Footer -->
+<div class="footer">
+  <footer class="page-footer font-small blue pt-4">
+
+    <!-- Footer Links -->
+    <div class="container-fluid text-center text-md-left">
+
+      <!-- Grid row -->
+      <div class="row">
+
+        <!-- Grid column -->
+        <div class="col-md-6 mt-md-0 mt-3">
+
+          <!-- Content -->
+          <h5 class="text-uppercase">YumYum Incorporated</h5>
+          <p>Copyright
+
+            Content published on this website (digital downloads, images, texts, graphics, logos) is the property of
+            YumYum and/or its content creators and protected by international copyright laws. The entire compilation of
+            the content found on this website is the exclusive property of YumYum, with copyright authorship for this
+            compilation by YumYum.</p>
+
+        </div>
+        <!-- Grid column -->
+
+        <hr class="clearfix w-100 d-md-none pb-3">
+
+        <!-- Grid column -->
+        <div class="col-md-3 mb-md-0 mb-3">
+
+          <!-- Links -->
+          <h5 class="text-uppercase">YumYum Rewards</h5>
+
+          <ul class="list-unstyled">
+            <li>
+              <a href="#!">Join Now</a>
+            </li>
+            <li>
+              <a href="#!">Learn More</a>
+            </li>
+            <li>
+              <a href="#!">Manage Account</a>
+            </li>
+            <a href="https://linkedin.com" target="_blank">
+              <img src="/assets/images/linkedin.png" height="25" width="25">
+            </a>
+            <a href="https://facebook.com" target="_blank">
+              <img src="/assets/images/facebook.png" height="25" width="25">
+            </a>
+            <a href="https://twitter.com" target="_blank">
+              <img src="/assets/images/twitter.png" height="25" width="25">
+            </a>
+          </ul>
+
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-3 mb-md-0 mb-3">
+
+          <!-- Links -->
+          <h5 class="text-uppercase">News & Info</h5>
+
+          <ul class="list-unstyled">
+            <li>
+              <a href="#!">Press Releases</a>
+            </li>
+            <li>
+              <a href="#!">About YumYum</a>
+            </li>
+            <li>
+              <a href="#!">Yum Yum Support</a>
+            </li>
+            <li>
+              <a href="#!">YumYum API</a>
+            </li>
+
+          </ul>
+
+        </div>
+        <!-- Grid column -->
+
+      </div>
+      <!-- Grid row -->
+
+    </div>
+    <!-- Footer Links -->
+
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3">© 2018 Copyright:
+      <a href="https://mdbootstrap.com/education/bootstrap/"> YumYum.com</a>
+    </div>
+    <!-- Copyright -->
+
+
+  </footer>
+  <!-- Footer -->
+</div>
