@@ -4,6 +4,8 @@ const bp = require('body-parser');
 const session = require('express-session');
 const app = express();
 const port = 8888;
+const bcrypt = require('bcryptjs');
+
 
 // settings
 app
