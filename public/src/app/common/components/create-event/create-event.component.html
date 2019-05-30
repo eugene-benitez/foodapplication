@@ -1,20 +1,23 @@
 <div class="row">
-  <div style="text-align:center" class="col">
-    <button class="link" [routerLink]="['/dashboard']">Home</button> 
-    <button class="link" [routerLink]="['/events']">My Events</button> 
+  <div class="col">
+    <div  style="text-align:center"> 
+      <h3>BIG BOY</h3>
+      <img src="/assets/images/andrew.jpg" width="300"><br>
+      <button class="link" [routerLink]="['/events']">My Events</button> 
+    </div>  
   </div>
   <div class="col-6">
-    <h4 class="underline">Featured Restaurants</h4>
+    <br><h4 class="underline">Featured Restaurants</h4>
     <div class="row">
       <div class="col add1">
         <h5>Upcoming</h5>
-        <h6>placeholder</h6>
-        <h6>placeholder</h6>
+        <h6>Hambones</h6>
+        <h6>Habuya</h6>
       </div>
       <div class="col add">
         <h5>Wish List</h5>
-        <h6>placeholder</h6>
-        <h6>placeholder</h6>
+        <h6>Stinking Rose</h6>
+        <h6>JR BBQ</h6>
       </div>
       <div class="col add3">
         <h5>Popular</h5>
@@ -23,7 +26,7 @@
       </div>
     </div><br>
     
-    <h4 class="underline">Schedule Event</h4>
+    <h4 class="underline">Create Event</h4>
     <form class="form" (submit)="createEvent()">
       <div class="form-group">
         <label for="restaurant_name">Restaurant name</label>
@@ -56,7 +59,10 @@
     </form>
   </div>
   <div style="text-align:center" class="col">
-      <button class="link" [routerLink]="['/']">Logout</button> 
+      <h4>My YumYum</h4><br>
+      <img src="/assets/images/innout.jpg"   height="150" width="150"><br><br>
+      <img src="/assets/images/wingstop.jpg"   height="150" width="150"><br><br>
+      <img src="/assets/images/blaze.jpg"   height="150" width="150"><br><br>
   </div>
 </div>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">

@@ -39,7 +39,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _common_components_login_reg_login_reg_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./common/components/login-reg/login-reg.component */ "./src/app/common/components/login-reg/login-reg.component.ts");
 /* harmony import */ var _common_components_dashboard_dashboard_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./common/components/dashboard/dashboard.component */ "./src/app/common/components/dashboard/dashboard.component.ts");
 /* harmony import */ var _common_components_create_event_create_event_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./common/components/create-event/create-event.component */ "./src/app/common/components/create-event/create-event.component.ts");
+
+/* harmony import */ var _common_components_my_events_my_events_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./common/components/my-events/my-events.component */ "./src/app/common/components/my-events/my-events.component.ts");
+
 /* harmony import */ var _common_components_about_about_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./common/components/about/about.component */ "./src/app/common/components/about/about.component.ts");
+
 
 
 
@@ -51,6 +55,9 @@ var routes = [
     { path: '', component: _common_components_login_reg_login_reg_component__WEBPACK_IMPORTED_MODULE_3__["LoginRegComponent"] },
     { path: 'dashboard', component: _common_components_dashboard_dashboard_component__WEBPACK_IMPORTED_MODULE_4__["DashboardComponent"] },
     { path: 'new-event', component: _common_components_create_event_create_event_component__WEBPACK_IMPORTED_MODULE_5__["CreateEventComponent"] },
+
+    { path: 'events', component: _common_components_my_events_my_events_component__WEBPACK_IMPORTED_MODULE_6__["MyEventsComponent"] },
+
     { path: 'about', component: _common_components_about_about_component__WEBPACK_IMPORTED_MODULE_6__["AboutComponent"] },
 ];
 var AppRoutingModule = /** @class */ (function () {
@@ -76,7 +83,7 @@ var AppRoutingModule = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2FwcC5jb21wb25lbnQuY3NzIn0= */"
+module.exports = ".wrapper {\n   background-color: lightsteelblue\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvYXBwLmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7R0FDRztBQUNIIiwiZmlsZSI6InNyYy9hcHAvYXBwLmNvbXBvbmVudC5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyIud3JhcHBlciB7XG4gICBiYWNrZ3JvdW5kLWNvbG9yOiBsaWdodHN0ZWVsYmx1ZVxufSJdfQ== */"
 
 /***/ }),
 
@@ -87,7 +94,10 @@ module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW
 /*! no static exports found */
 /***/ (function(module, exports) {
 
+module.exports = "<script src=\"https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js\"></script>\n<script src=\"https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js\"></script>\n<link rel=\"stylesheet\" href=\"https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css\">\n<script src=\"https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js\"></script>\n\n\n<!--The content below is only a placeholder and can be replaced.-->\n\n\n\n\n<nav class=\"navbar navbar-expand-sm bg-primary navbar-dark\">\n    <img src=\"/assets/images/ricebowl.png\" height=\"35\" width=\"35\">\n  <button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarSupportedContent\"\n    aria-controls=\"navbarSupportedContent\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">\n    <span class=\"navbar-toggler-icon\"></span>\n  </button>\n  <div class=\"collapse navbar-collapse\" id=\"navbarSupportedContent\">\n    <ul class=\"navbar-nav mr-auto\">\n      <li class=\"nav-item active\">\n        <a class=\"nav-link\" href=\"#\">Home <span class=\"sr-only\">(current)</span></a>\n      </li>\n      <li class=\"nav-item\">\n        <a class=\"nav-link\" href=\"#\">About</a>\n      </li>\n      <li class=\"nav-item\">\n        <a class=\"nav-link\" href=\"#\">Support</a>\n      </li>\n    </ul>\n    <form class=\"form-inline my-2 my-lg-0\">\n      <input class=\"form-control mr-sm-2\" type=\"text\" placeholder=\"Search for food\" aria-label=\"Search\">\n      <button class=\"btn btn-outline-light my-2 my-sm-0\" type=\"submit\">Search</button>\n    </form>\n  </div>\n</nav>\n\n\n<div class=\"footer\">\n  <a href=\"https://linkedin.com\" target=\"_blank\">\n    <img src=\"/assets/images/linkedin.png\" height=\"35\" width=\"35\">\n  </a>\n  <a href=\"https://facebook.com\" target=\"_blank\">\n    <img src=\"/assets/images/facebook.png\" height=\"35\" width=\"35\">\n  </a>\n  <a href=\"https://twitter.com\" target=\"_blank\">\n    <img src=\"/assets/images/twitter.png\" height=\"35\" width=\"35\">\n  </a>\n</div>\n\n<router-outlet></router-outlet>\n"
+
 module.exports = "<link rel=\"stylesheet\" href=\"https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css\">\n<script src=\"https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js\"></script>\n<script src=\"https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js\"></script>\n<script src=\"https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js\"></script>\n\n\n\n<!--The content below is only a placeholder and can be replaced.-->\n\n\n\n\n<nav class=\"navbar navbar-expand-sm bg-primary navbar-dark fixed-top\">\n  <a class=\"navbar-brand\" href=\"#\">YumYum</a>\n  <button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarSupportedContent\"\n    aria-controls=\"navbarSupportedContent\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">\n    <span class=\"navbar-toggler-icon\"></span>\n  </button>\n  <div class=\"collapse navbar-collapse\" id=\"navbarSupportedContent\">\n    <ul class=\"navbar-nav mr-auto\">\n      <li class=\"nav-item active\">\n        <a class=\"nav-link\" href=\"#\">Home <span class=\"sr-only\">(current)</span></a>\n      </li>\n      <li class=\"nav-item\">\n        <a class=\"nav-link\" [routerLink]=\"['/about']\">About</a>\n      </li>\n      <li class=\"nav-item\">\n        <a class=\"nav-link\" href=\"#\">Support</a>\n      </li>\n    </ul>\n    <form class=\"form-inline my-2 my-lg-0\">\n      <input class=\"form-control mr-sm-2\" type=\"text\" placeholder=\"Search for food\" aria-label=\"Search\">\n      <button class=\"btn btn-outline-light my-2 my-sm-0\" type=\"submit\">Search</button>\n    </form>\n  </div>\n</nav><br> <Br> <br>\n\n\n<!-- <div class=\"footer\">\n  <a href=\"https://linkedin.com\" target=\"_blank\">\n    <img src=\"/assets/images/linkedin.png\" height=\"35\" width=\"35\">\n  </a>\n  <a href=\"https://facebook.com\" target=\"_blank\">\n    <img src=\"/assets/images/facebook.png\" height=\"35\" width=\"35\">\n  </a>\n  <a href=\"https://twitter.com\" target=\"_blank\">\n    <img src=\"/assets/images/twitter.png\" height=\"35\" width=\"35\">\n  </a>\n</div> -->\n<router-outlet></router-outlet>\n<!-- Footer -->\n<div class=\"footer\">\n  <footer class=\"page-footer font-small blue pt-4\">\n\n    <!-- Footer Links -->\n    <div class=\"container-fluid text-center text-md-left\">\n\n      <!-- Grid row -->\n      <div class=\"row\">\n\n        <!-- Grid column -->\n        <div class=\"col-md-6 mt-md-0 mt-3\">\n\n          <!-- Content -->\n          <h5 class=\"text-uppercase\">YumYum Incorporated</h5>\n          <p>Copyright\n\n            Content published on this website (digital downloads, images, texts, graphics, logos) is the property of\n            YumYum and/or its content creators and protected by international copyright laws. The entire compilation of\n            the content found on this website is the exclusive property of YumYum, with copyright authorship for this\n            compilation by YumYum.</p>\n\n        </div>\n        <!-- Grid column -->\n\n        <hr class=\"clearfix w-100 d-md-none pb-3\">\n\n        <!-- Grid column -->\n        <div class=\"col-md-3 mb-md-0 mb-3\">\n\n          <!-- Links -->\n          <h5 class=\"text-uppercase\">YumYum Rewards</h5>\n\n          <ul class=\"list-unstyled\">\n            <li>\n              <a href=\"#!\">Join Now</a>\n            </li>\n            <li>\n              <a href=\"#!\">Learn More</a>\n            </li>\n            <li>\n              <a href=\"#!\">Manage Account</a>\n            </li>\n            <a href=\"https://linkedin.com\" target=\"_blank\">\n              <img src=\"/assets/images/linkedin.png\" height=\"25\" width=\"25\">\n            </a>\n            <a href=\"https://facebook.com\" target=\"_blank\">\n              <img src=\"/assets/images/facebook.png\" height=\"25\" width=\"25\">\n            </a>\n            <a href=\"https://twitter.com\" target=\"_blank\">\n              <img src=\"/assets/images/twitter.png\" height=\"25\" width=\"25\">\n            </a>\n          </ul>\n\n        </div>\n        <!-- Grid column -->\n\n        <!-- Grid column -->\n        <div class=\"col-md-3 mb-md-0 mb-3\">\n\n          <!-- Links -->\n          <h5 class=\"text-uppercase\">News & Info</h5>\n\n          <ul class=\"list-unstyled\">\n            <li>\n              <a href=\"#!\">Press Releases</a>\n            </li>\n            <li>\n              <a href=\"#!\">About YumYum</a>\n            </li>\n            <li>\n              <a href=\"#!\">Yum Yum Support</a>\n            </li>\n            <li>\n              <a href=\"#!\">YumYum API</a>\n            </li>\n\n          </ul>\n\n        </div>\n        <!-- Grid column -->\n\n      </div>\n      <!-- Grid row -->\n\n    </div>\n    <!-- Footer Links -->\n\n    <!-- Copyright -->\n    <div class=\"footer-copyright text-center py-3\">© 2018 Copyright:\n      <a href=\"https://mdbootstrap.com/education/bootstrap/\"> YumYum.com</a>\n    </div>\n    <!-- Copyright -->\n\n\n  </footer>\n  <!-- Footer -->\n</div>"
+
 
 /***/ }),
 
@@ -144,7 +154,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _common_components_dashboard_dashboard_component__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./common/components/dashboard/dashboard.component */ "./src/app/common/components/dashboard/dashboard.component.ts");
 /* harmony import */ var _common_services_http_service__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./common/services/http.service */ "./src/app/common/services/http.service.ts");
 /* harmony import */ var _common_components_create_event_create_event_component__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./common/components/create-event/create-event.component */ "./src/app/common/components/create-event/create-event.component.ts");
+
+/* harmony import */ var _common_components_my_events_my_events_component__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./common/components/my-events/my-events.component */ "./src/app/common/components/my-events/my-events.component.ts");
+
 /* harmony import */ var _common_components_about_about_component__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./common/components/about/about.component */ "./src/app/common/components/about/about.component.ts");
+
 
 
 
@@ -166,8 +180,11 @@ var AppModule = /** @class */ (function () {
                 _app_component__WEBPACK_IMPORTED_MODULE_5__["AppComponent"],
                 _common_components_login_reg_login_reg_component__WEBPACK_IMPORTED_MODULE_6__["LoginRegComponent"],
                 _common_components_dashboard_dashboard_component__WEBPACK_IMPORTED_MODULE_8__["DashboardComponent"],
-                _common_components_create_event_create_event_component__WEBPACK_IMPORTED_MODULE_10__["CreateEventComponent"],
+
+                _common_components_my_events_my_events_component__WEBPACK_IMPORTED_MODULE_11__["MyEventsComponent"],
+
                 _common_components_about_about_component__WEBPACK_IMPORTED_MODULE_11__["AboutComponent"],
+
             ],
             imports: [
                 _angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__["BrowserModule"],
@@ -260,7 +277,7 @@ module.exports = ".left {\n    display: inline-block;\n    width: 675px;\n}\n.ri
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"row\">\n  <div style=\"text-align:center\" class=\"col\">\n    <button class=\"link\" [routerLink]=\"['/dashboard']\">Home</button> \n    <button class=\"link\" [routerLink]=\"['/events']\">My Events</button> \n  </div>\n  <div class=\"col-6\">\n    <h4 class=\"underline\">Featured Restaurants</h4>\n    <div class=\"row\">\n      <div class=\"col add1\">\n        <h5>Upcoming</h5>\n        <h6>placeholder</h6>\n        <h6>placeholder</h6>\n      </div>\n      <div class=\"col add\">\n        <h5>Wish List</h5>\n        <h6>placeholder</h6>\n        <h6>placeholder</h6>\n      </div>\n      <div class=\"col add3\">\n        <h5>Popular</h5>\n        <h6>placeholder</h6>\n        <h6>placeholder</h6>\n      </div>\n    </div><br>\n    \n    <h4 class=\"underline\">Schedule Event</h4>\n    <form class=\"form\" (submit)=\"createEvent()\">\n      <div class=\"form-group\">\n        <label for=\"restaurant_name\">Restaurant name</label>\n        <input type=\"restaurant_name\" class=\"form-control\" id=\"restaurant_name\" placeholder=\"Restaurant name\"\n          name=\"createEvent.restaurant_name\" [(ngModel)]=\"createEvent.restaurant_name\">\n      </div>\n      <div class=\"form-group\">\n        <label for=\"date\">Date</label>\n        <input type=\"date\" class=\"form-control\" id=\"date\" placeholder=\"Date\"\n          name=\"createEvent.date\" [(ngModel)]=\"createEvent.date\">\n      </div>\n      <div class=\"form-group\">\n        <label for=\"time\">Time</label>\n        <input type=\"time\" class=\"form-control\" id=\"time\" placeholder=\"datetime\" \n          name=\"createEvent.time\" [(ngModel)]=\"createEvent.time\">\n      </div>\n      <div class=\"form-group\">\n          <label for=\"address\">Street Address</label>\n          <input type=\"text\" class=\"form-control\" id=\"address\" placeholder=\"Street Address\" \n            name=\"createEvent.address\" [(ngModel)]=\"createEvent.address\">\n      </div>\n      <div class=\"form-group\">\n          <label for=\"city\">City</label>\n          <input type=\"text\" class=\"form-control\" id=\"city\" placeholder=\"City\" \n            name=\"createEvent.city\" [(ngModel)]=\"createEvent.city\">\n      </div>\n\n    \n      <button type=\"submit\" class=\"btn btn-primary\">Submit</button>\n    </form>\n  </div>\n  <div style=\"text-align:center\" class=\"col\">\n      <button class=\"link\" [routerLink]=\"['/']\">Logout</button> \n  </div>\n</div>\n<link rel=\"stylesheet\" href=\"https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css\">\n"
+module.exports = "<div class=\"row\">\n  <div class=\"col\">\n    <div  style=\"text-align:center\"> \n      <h3>BIG BOY</h3>\n      <img src=\"/assets/images/andrew.jpg\" width=\"300\"><br>\n      <button class=\"link\" [routerLink]=\"['/events']\">My Events</button> \n    </div>  \n  </div>\n  <div class=\"col-6\">\n    <br><h4 class=\"underline\">Featured Restaurants</h4>\n    <div class=\"row\">\n      <div class=\"col add1\">\n        <h5>Upcoming</h5>\n        <h6>Hambones</h6>\n        <h6>Habuya</h6>\n      </div>\n      <div class=\"col add\">\n        <h5>Wish List</h5>\n        <h6>Stinking Rose</h6>\n        <h6>JR BBQ</h6>\n      </div>\n      <div class=\"col add3\">\n        <h5>Popular</h5>\n        <h6>placeholder</h6>\n        <h6>placeholder</h6>\n      </div>\n    </div><br>\n    \n    <h4 class=\"underline\">Create Event</h4>\n    <form class=\"form\" (submit)=\"createEvent()\">\n      <div class=\"form-group\">\n        <label for=\"restaurant_name\">Restaurant name</label>\n        <input type=\"restaurant_name\" class=\"form-control\" id=\"restaurant_name\" placeholder=\"Restaurant name\"\n          name=\"createEvent.restaurant_name\" [(ngModel)]=\"createEvent.restaurant_name\">\n      </div>\n      <div class=\"form-group\">\n        <label for=\"date\">Date</label>\n        <input type=\"date\" class=\"form-control\" id=\"date\" placeholder=\"Date\"\n          name=\"createEvent.date\" [(ngModel)]=\"createEvent.date\">\n      </div>\n      <div class=\"form-group\">\n        <label for=\"time\">Time</label>\n        <input type=\"time\" class=\"form-control\" id=\"time\" placeholder=\"datetime\" \n          name=\"createEvent.time\" [(ngModel)]=\"createEvent.time\">\n      </div>\n      <div class=\"form-group\">\n          <label for=\"address\">Street Address</label>\n          <input type=\"text\" class=\"form-control\" id=\"address\" placeholder=\"Street Address\" \n            name=\"createEvent.address\" [(ngModel)]=\"createEvent.address\">\n      </div>\n      <div class=\"form-group\">\n          <label for=\"city\">City</label>\n          <input type=\"text\" class=\"form-control\" id=\"city\" placeholder=\"City\" \n            name=\"createEvent.city\" [(ngModel)]=\"createEvent.city\">\n      </div>\n\n    \n      <button type=\"submit\" class=\"btn btn-primary\">Submit</button>\n    </form>\n  </div>\n  <div style=\"text-align:center\" class=\"col\">\n      <h4>My YumYum</h4><br>\n      <img src=\"/assets/images/innout.jpg\"   height=\"150\" width=\"150\"><br><br>\n      <img src=\"/assets/images/wingstop.jpg\"   height=\"150\" width=\"150\"><br><br>\n      <img src=\"/assets/images/blaze.jpg\"   height=\"150\" width=\"150\"><br><br>\n  </div>\n</div>\n<link rel=\"stylesheet\" href=\"https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css\">\n"
 
 /***/ }),
 
@@ -509,6 +526,69 @@ var LoginRegComponent = /** @class */ (function () {
 
 /***/ }),
 
+/***/ "./src/app/common/components/my-events/my-events.component.css":
+/*!*********************************************************************!*\
+  !*** ./src/app/common/components/my-events/my-events.component.css ***!
+  \*********************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = ".wrapper {\n    text-align: center;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvY29tbW9uL2NvbXBvbmVudHMvbXktZXZlbnRzL215LWV2ZW50cy5jb21wb25lbnQuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0lBQ0ksa0JBQWtCO0FBQ3RCIiwiZmlsZSI6InNyYy9hcHAvY29tbW9uL2NvbXBvbmVudHMvbXktZXZlbnRzL215LWV2ZW50cy5jb21wb25lbnQuY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLndyYXBwZXIge1xuICAgIHRleHQtYWxpZ246IGNlbnRlcjtcbn0iXX0= */"
+
+/***/ }),
+
+/***/ "./src/app/common/components/my-events/my-events.component.html":
+/*!**********************************************************************!*\
+  !*** ./src/app/common/components/my-events/my-events.component.html ***!
+  \**********************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<div class=\"wrapper\">\n    <br><img src=\"/assets/images/andrew.jpg\" width=\"300\"><br>\n    <h3>Upcoming Events</h3>\n</div>"
+
+/***/ }),
+
+/***/ "./src/app/common/components/my-events/my-events.component.ts":
+/*!********************************************************************!*\
+  !*** ./src/app/common/components/my-events/my-events.component.ts ***!
+  \********************************************************************/
+/*! exports provided: MyEventsComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "MyEventsComponent", function() { return MyEventsComponent; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _services_http_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../services/http.service */ "./src/app/common/services/http.service.ts");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
+
+
+
+
+var MyEventsComponent = /** @class */ (function () {
+    function MyEventsComponent(router, http) {
+        this.router = router;
+        this.http = http;
+    }
+    MyEventsComponent.prototype.ngOnInit = function () {
+    };
+    MyEventsComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+            selector: 'app-my-events',
+            template: __webpack_require__(/*! ./my-events.component.html */ "./src/app/common/components/my-events/my-events.component.html"),
+            styles: [__webpack_require__(/*! ./my-events.component.css */ "./src/app/common/components/my-events/my-events.component.css")]
+        }),
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_angular_router__WEBPACK_IMPORTED_MODULE_3__["Router"],
+            _services_http_service__WEBPACK_IMPORTED_MODULE_2__["HttpService"]])
+    ], MyEventsComponent);
+    return MyEventsComponent;
+}());
+
+
+
+/***/ }),
+
 /***/ "./src/app/common/services/http.service.ts":
 /*!*************************************************!*\
   !*** ./src/app/common/services/http.service.ts ***!
@@ -611,8 +691,7 @@ Object(_angular_platform_browser_dynamic__WEBPACK_IMPORTED_MODULE_1__["platformB
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! /Users/andrewquan/Desktop/FoodAppProj/foodapplication/public/src/main.ts */"./src/main.ts");
-
+module.exports = __webpack_require__(/*! /Users/toshiro/Desktop/FoodAppProj/foodapplication/public/src/main.ts */"./src/main.ts");
 
 /***/ })
 

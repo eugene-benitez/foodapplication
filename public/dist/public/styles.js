@@ -559,6 +559,7 @@ if(false) {}
 
 module.exports = __webpack_require__(/*! /Users/eugenebenitez/Desktop/MEAN_Stack/Angular/foodapplication/public/src/styles.css */"./src/styles.css");
 
+
 /***/ })
 
 },[[3,"runtime"]]]);
