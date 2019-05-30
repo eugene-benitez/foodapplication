@@ -38,11 +38,15 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
 /* harmony import */ var _common_components_login_reg_login_reg_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./common/components/login-reg/login-reg.component */ "./src/app/common/components/login-reg/login-reg.component.ts");
 /* harmony import */ var _common_components_dashboard_dashboard_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./common/components/dashboard/dashboard.component */ "./src/app/common/components/dashboard/dashboard.component.ts");
+<<<<<<< HEAD
+/* harmony import */ var _common_components_my_events_my_events_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./common/components/my-events/my-events.component */ "./src/app/common/components/my-events/my-events.component.ts");
+=======
 /* harmony import */ var _common_components_create_event_create_event_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./common/components/create-event/create-event.component */ "./src/app/common/components/create-event/create-event.component.ts");
 /* harmony import */ var _common_components_my_events_my_events_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./common/components/my-events/my-events.component */ "./src/app/common/components/my-events/my-events.component.ts");
 /* harmony import */ var _common_components_about_about_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./common/components/about/about.component */ "./src/app/common/components/about/about.component.ts");
 
 
+>>>>>>> 185fe21df0bac2f2ea4fd2afaacc431db2d4fb6e
 
 
 
@@ -52,9 +56,18 @@ __webpack_require__.r(__webpack_exports__);
 var routes = [
     { path: '', component: _common_components_login_reg_login_reg_component__WEBPACK_IMPORTED_MODULE_3__["LoginRegComponent"] },
     { path: 'dashboard', component: _common_components_dashboard_dashboard_component__WEBPACK_IMPORTED_MODULE_4__["DashboardComponent"] },
+<<<<<<< HEAD
+    { path: 'events', component: _common_components_my_events_my_events_component__WEBPACK_IMPORTED_MODULE_5__["MyEventsComponent"] },
+=======
     { path: 'new-event', component: _common_components_create_event_create_event_component__WEBPACK_IMPORTED_MODULE_5__["CreateEventComponent"] },
     { path: 'events', component: _common_components_my_events_my_events_component__WEBPACK_IMPORTED_MODULE_6__["MyEventsComponent"] },
+<<<<<<< HEAD
     { path: 'about', component: _common_components_about_about_component__WEBPACK_IMPORTED_MODULE_7__["AboutComponent"] },
+=======
+
+    { path: 'about', component: _common_components_about_about_component__WEBPACK_IMPORTED_MODULE_6__["AboutComponent"] },
+>>>>>>> 185fe21df0bac2f2ea4fd2afaacc431db2d4fb6e
+>>>>>>> be14d10a5cf80b0f2a76a36c477986aec4e98159
 ];
 var AppRoutingModule = /** @class */ (function () {
     function AppRoutingModule() {
@@ -90,7 +103,18 @@ module.exports = ".wrapper {\n   background-color: lightsteelblue\n}\n/*# source
 /*! no static exports found */
 /***/ (function(module, exports) {
 
+<<<<<<< HEAD
 module.exports = "<nav class=\"navbar navbar-expand-sm bg-primary navbar-dark fixed-top\">\n  <img src=\"/assets/images/ricebowl.png\" height=\"35\" width=\"35\">\n\n  <button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarSupportedContent\"\n    aria-controls=\"navbarSupportedContent\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">\n    <span class=\"navbar-toggler-icon\"></span>\n  </button>\n  <div class=\"collapse navbar-collapse\" id=\"navbarSupportedContent\">\n    <ul class=\"navbar-nav mr-auto\">\n      <li class=\"nav-item active\">\n        <a class=\"nav-link\" [routerLink]=\"['/dashboard']\">Home <span class=\"sr-only\">(current)</span></a>\n      </li>\n      <li class=\"nav-item\">\n        <a class=\"nav-link\" [routerLink]=\"['/about']\">About</a>\n      </li>\n      <li class=\"nav-item\">\n        <a class=\"nav-link\" href=\"#\">Support</a>\n      </li>\n    </ul>\n    <form class=\"form-inline my-2 my-lg-0\">\n      <input class=\"form-control mr-sm-2\" type=\"text\" placeholder=\"Search for food\" aria-label=\"Search\">\n      <button class=\"btn btn-outline-light my-2 my-sm-0\" type=\"submit\">Search</button>\n    </form>\n  </div>\n</nav><br> <Br> <br>\n\n\n<!-- <div class=\"footer\">\n  <a href=\"https://linkedin.com\" target=\"_blank\">\n    <img src=\"/assets/images/linkedin.png\" height=\"35\" width=\"35\">\n  </a>\n  <a href=\"https://facebook.com\" target=\"_blank\">\n    <img src=\"/assets/images/facebook.png\" height=\"35\" width=\"35\">\n  </a>\n  <a href=\"https://twitter.com\" target=\"_blank\">\n    <img src=\"/assets/images/twitter.png\" height=\"35\" width=\"35\">\n  </a>\n</div> -->\n<router-outlet></router-outlet>\n<!-- Footer -->\n<div class=\"footer\">\n  <footer class=\"page-footer font-small blue pt-4\">\n\n    <!-- Footer Links -->\n    <div class=\"container-fluid text-center text-md-left\">\n\n      <!-- Grid row -->\n      <div class=\"row\">\n\n        <!-- Grid column -->\n        <div class=\"col-md-6 mt-md-0 mt-3\">\n\n          <!-- Content -->\n          <h5 class=\"text-uppercase\">YumYum Incorporated</h5>\n          <p>Copyright\n\n            Content published on this website (digital downloads, images, texts, graphics, logos) is the property of\n            YumYum and/or its content creators and protected by international copyright laws. The entire compilation of\n            the content found on this website is the exclusive property of YumYum, with copyright authorship for this\n            compilation by YumYum.</p>\n\n        </div>\n        <!-- Grid column -->\n\n        <hr class=\"clearfix w-100 d-md-none pb-3\">\n\n        <!-- Grid column -->\n        <div class=\"col-md-3 mb-md-0 mb-3\">\n\n          <!-- Links -->\n          <h5 class=\"text-uppercase\">YumYum Rewards</h5>\n\n          <ul class=\"list-unstyled\">\n            <li>\n              <a href=\"#!\">Join Now</a>\n            </li>\n            <li>\n              <a href=\"#!\">Learn More</a>\n            </li>\n            <li>\n              <a href=\"#!\">Manage Account</a>\n            </li>\n            <a href=\"https://linkedin.com\" target=\"_blank\">\n              <img src=\"/assets/images/linkedin.png\" height=\"25\" width=\"25\">\n            </a>\n            <a href=\"https://facebook.com\" target=\"_blank\">\n              <img src=\"/assets/images/facebook.png\" height=\"25\" width=\"25\">\n            </a>\n            <a href=\"https://twitter.com\" target=\"_blank\">\n              <img src=\"/assets/images/twitter.png\" height=\"25\" width=\"25\">\n            </a>\n          </ul>\n\n        </div>\n        <!-- Grid column -->\n\n        <!-- Grid column -->\n        <div class=\"col-md-3 mb-md-0 mb-3\">\n\n          <!-- Links -->\n          <h5 class=\"text-uppercase\">News & Info</h5>\n\n          <ul class=\"list-unstyled\">\n            <li>\n              <a href=\"#!\">Press Releases</a>\n            </li>\n            <li>\n              <a href=\"#!\">About YumYum</a>\n            </li>\n            <li>\n              <a href=\"#!\">Yum Yum Support</a>\n            </li>\n            <li>\n              <a href=\"#!\">YumYum API</a>\n            </li>\n\n          </ul>\n\n        </div>\n        <!-- Grid column -->\n\n      </div>\n      <!-- Grid row -->\n\n    </div>\n    <!-- Footer Links -->\n\n    <!-- Copyright -->\n    <div class=\"footer-copyright text-center py-3\">© 2018 Copyright:\n      <a href=\"https://mdbootstrap.com/education/bootstrap/\"> YumYum.com</a>\n    </div>\n    <!-- Copyright -->\n\n  </footer>\n  <!-- Footer -->\n</div>\n\n<link rel=\"stylesheet\" href=\"https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css\">\n<script src=\"https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js\"></script>\n<script src=\"https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js\"></script>"
+=======
+<<<<<<< HEAD
+module.exports = "\n\n\n<!--The content below is only a placeholder and can be replaced.-->\n\n\n\n\n<nav class=\"navbar navbar-expand-sm bg-primary navbar-dark\">\n    <img src=\"/assets/images/ricebowl.png\" height=\"35\" width=\"35\">\n  <button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarSupportedContent\"\n    aria-controls=\"navbarSupportedContent\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">\n    <span class=\"navbar-toggler-icon\"></span>\n  </button>\n  <div class=\"collapse navbar-collapse\" id=\"navbarSupportedContent\">\n    <ul class=\"navbar-nav mr-auto\">\n      <li class=\"nav-item active\">\n        <a class=\"nav-link\" href=\"#\">Home <span class=\"sr-only\">(current)</span></a>\n      </li>\n      <li class=\"nav-item\">\n        <a class=\"nav-link\" href=\"#\">About</a>\n      </li>\n      <li class=\"nav-item\">\n        <a class=\"nav-link\" href=\"#\">Support</a>\n      </li>\n    </ul>\n    <form class=\"form-inline my-2 my-lg-0\">\n      <input class=\"form-control mr-sm-2\" type=\"text\" placeholder=\"Search for food\" aria-label=\"Search\">\n      <button class=\"btn btn-outline-light my-2 my-sm-0\" type=\"submit\">Search</button>\n    </form>\n  </div>\n</nav>\n\n\n<div class=\"footer\">\n  <a href=\"https://linkedin.com\" target=\"_blank\">\n    <img src=\"/assets/images/linkedin.png\" height=\"35\" width=\"35\">\n  </a>\n  <a href=\"https://facebook.com\" target=\"_blank\">\n    <img src=\"/assets/images/facebook.png\" height=\"35\" width=\"35\">\n  </a>\n  <a href=\"https://twitter.com\" target=\"_blank\">\n    <img src=\"/assets/images/twitter.png\" height=\"35\" width=\"35\">\n  </a>\n</div>\n\n<router-outlet></router-outlet>\n<script src=\"https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js\"></script>\n<script src=\"https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js\"></script>\n<link rel=\"stylesheet\" href=\"https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css\">\n"
+=======
+module.exports = "<script src=\"https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js\"></script>\n<script src=\"https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js\"></script>\n<link rel=\"stylesheet\" href=\"https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css\">\n<script src=\"https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js\"></script>\n\n\n<!--The content below is only a placeholder and can be replaced.-->\n\n\n\n\n<nav class=\"navbar navbar-expand-sm bg-primary navbar-dark\">\n    <img src=\"/assets/images/ricebowl.png\" height=\"35\" width=\"35\">\n  <button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarSupportedContent\"\n    aria-controls=\"navbarSupportedContent\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">\n    <span class=\"navbar-toggler-icon\"></span>\n  </button>\n  <div class=\"collapse navbar-collapse\" id=\"navbarSupportedContent\">\n    <ul class=\"navbar-nav mr-auto\">\n      <li class=\"nav-item active\">\n        <a class=\"nav-link\" href=\"#\">Home <span class=\"sr-only\">(current)</span></a>\n      </li>\n      <li class=\"nav-item\">\n        <a class=\"nav-link\" href=\"#\">About</a>\n      </li>\n      <li class=\"nav-item\">\n        <a class=\"nav-link\" href=\"#\">Support</a>\n      </li>\n    </ul>\n    <form class=\"form-inline my-2 my-lg-0\">\n      <input class=\"form-control mr-sm-2\" type=\"text\" placeholder=\"Search for food\" aria-label=\"Search\">\n      <button class=\"btn btn-outline-light my-2 my-sm-0\" type=\"submit\">Search</button>\n    </form>\n  </div>\n</nav>\n\n\n<div class=\"footer\">\n  <a href=\"https://linkedin.com\" target=\"_blank\">\n    <img src=\"/assets/images/linkedin.png\" height=\"35\" width=\"35\">\n  </a>\n  <a href=\"https://facebook.com\" target=\"_blank\">\n    <img src=\"/assets/images/facebook.png\" height=\"35\" width=\"35\">\n  </a>\n  <a href=\"https://twitter.com\" target=\"_blank\">\n    <img src=\"/assets/images/twitter.png\" height=\"35\" width=\"35\">\n  </a>\n</div>\n\n<router-outlet></router-outlet>\n"
+
+module.exports = "<link rel=\"stylesheet\" href=\"https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css\">\n<script src=\"https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js\"></script>\n<script src=\"https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js\"></script>\n<script src=\"https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js\"></script>\n\n\n\n<!--The content below is only a placeholder and can be replaced.-->\n\n\n\n\n<nav class=\"navbar navbar-expand-sm bg-primary navbar-dark fixed-top\">\n  <a class=\"navbar-brand\" href=\"#\">YumYum</a>\n  <button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarSupportedContent\"\n    aria-controls=\"navbarSupportedContent\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">\n    <span class=\"navbar-toggler-icon\"></span>\n  </button>\n  <div class=\"collapse navbar-collapse\" id=\"navbarSupportedContent\">\n    <ul class=\"navbar-nav mr-auto\">\n      <li class=\"nav-item active\">\n        <a class=\"nav-link\" href=\"#\">Home <span class=\"sr-only\">(current)</span></a>\n      </li>\n      <li class=\"nav-item\">\n        <a class=\"nav-link\" [routerLink]=\"['/about']\">About</a>\n      </li>\n      <li class=\"nav-item\">\n        <a class=\"nav-link\" href=\"#\">Support</a>\n      </li>\n    </ul>\n    <form class=\"form-inline my-2 my-lg-0\">\n      <input class=\"form-control mr-sm-2\" type=\"text\" placeholder=\"Search for food\" aria-label=\"Search\">\n      <button class=\"btn btn-outline-light my-2 my-sm-0\" type=\"submit\">Search</button>\n    </form>\n  </div>\n</nav><br> <Br> <br>\n\n\n<!-- <div class=\"footer\">\n  <a href=\"https://linkedin.com\" target=\"_blank\">\n    <img src=\"/assets/images/linkedin.png\" height=\"35\" width=\"35\">\n  </a>\n  <a href=\"https://facebook.com\" target=\"_blank\">\n    <img src=\"/assets/images/facebook.png\" height=\"35\" width=\"35\">\n  </a>\n  <a href=\"https://twitter.com\" target=\"_blank\">\n    <img src=\"/assets/images/twitter.png\" height=\"35\" width=\"35\">\n  </a>\n</div> -->\n<router-outlet></router-outlet>\n<!-- Footer -->\n<div class=\"footer\">\n  <footer class=\"page-footer font-small blue pt-4\">\n\n    <!-- Footer Links -->\n    <div class=\"container-fluid text-center text-md-left\">\n\n      <!-- Grid row -->\n      <div class=\"row\">\n\n        <!-- Grid column -->\n        <div class=\"col-md-6 mt-md-0 mt-3\">\n\n          <!-- Content -->\n          <h5 class=\"text-uppercase\">YumYum Incorporated</h5>\n          <p>Copyright\n\n            Content published on this website (digital downloads, images, texts, graphics, logos) is the property of\n            YumYum and/or its content creators and protected by international copyright laws. The entire compilation of\n            the content found on this website is the exclusive property of YumYum, with copyright authorship for this\n            compilation by YumYum.</p>\n\n        </div>\n        <!-- Grid column -->\n\n        <hr class=\"clearfix w-100 d-md-none pb-3\">\n\n        <!-- Grid column -->\n        <div class=\"col-md-3 mb-md-0 mb-3\">\n\n          <!-- Links -->\n          <h5 class=\"text-uppercase\">YumYum Rewards</h5>\n\n          <ul class=\"list-unstyled\">\n            <li>\n              <a href=\"#!\">Join Now</a>\n            </li>\n            <li>\n              <a href=\"#!\">Learn More</a>\n            </li>\n            <li>\n              <a href=\"#!\">Manage Account</a>\n            </li>\n            <a href=\"https://linkedin.com\" target=\"_blank\">\n              <img src=\"/assets/images/linkedin.png\" height=\"25\" width=\"25\">\n            </a>\n            <a href=\"https://facebook.com\" target=\"_blank\">\n              <img src=\"/assets/images/facebook.png\" height=\"25\" width=\"25\">\n            </a>\n            <a href=\"https://twitter.com\" target=\"_blank\">\n              <img src=\"/assets/images/twitter.png\" height=\"25\" width=\"25\">\n            </a>\n          </ul>\n\n        </div>\n        <!-- Grid column -->\n\n        <!-- Grid column -->\n        <div class=\"col-md-3 mb-md-0 mb-3\">\n\n          <!-- Links -->\n          <h5 class=\"text-uppercase\">News & Info</h5>\n\n          <ul class=\"list-unstyled\">\n            <li>\n              <a href=\"#!\">Press Releases</a>\n            </li>\n            <li>\n              <a href=\"#!\">About YumYum</a>\n            </li>\n            <li>\n              <a href=\"#!\">Yum Yum Support</a>\n            </li>\n            <li>\n              <a href=\"#!\">YumYum API</a>\n            </li>\n\n          </ul>\n\n        </div>\n        <!-- Grid column -->\n\n      </div>\n      <!-- Grid row -->\n\n    </div>\n    <!-- Footer Links -->\n\n    <!-- Copyright -->\n    <div class=\"footer-copyright text-center py-3\">© 2018 Copyright:\n      <a href=\"https://mdbootstrap.com/education/bootstrap/\"> YumYum.com</a>\n    </div>\n    <!-- Copyright -->\n\n\n  </footer>\n  <!-- Footer -->\n</div>"
+
+>>>>>>> 185fe21df0bac2f2ea4fd2afaacc431db2d4fb6e
+>>>>>>> be14d10a5cf80b0f2a76a36c477986aec4e98159
 
 /***/ }),
 
@@ -146,11 +170,15 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/fesm5/http.js");
 /* harmony import */ var _common_components_dashboard_dashboard_component__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./common/components/dashboard/dashboard.component */ "./src/app/common/components/dashboard/dashboard.component.ts");
 /* harmony import */ var _common_services_http_service__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./common/services/http.service */ "./src/app/common/services/http.service.ts");
+<<<<<<< HEAD
+/* harmony import */ var _common_components_my_events_my_events_component__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./common/components/my-events/my-events.component */ "./src/app/common/components/my-events/my-events.component.ts");
+=======
 /* harmony import */ var _common_components_create_event_create_event_component__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./common/components/create-event/create-event.component */ "./src/app/common/components/create-event/create-event.component.ts");
 /* harmony import */ var _common_components_my_events_my_events_component__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./common/components/my-events/my-events.component */ "./src/app/common/components/my-events/my-events.component.ts");
 /* harmony import */ var _common_components_about_about_component__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./common/components/about/about.component */ "./src/app/common/components/about/about.component.ts");
 
 
+>>>>>>> 185fe21df0bac2f2ea4fd2afaacc431db2d4fb6e
 
 
 
@@ -171,9 +199,21 @@ var AppModule = /** @class */ (function () {
                 _app_component__WEBPACK_IMPORTED_MODULE_5__["AppComponent"],
                 _common_components_login_reg_login_reg_component__WEBPACK_IMPORTED_MODULE_6__["LoginRegComponent"],
                 _common_components_dashboard_dashboard_component__WEBPACK_IMPORTED_MODULE_8__["DashboardComponent"],
+<<<<<<< HEAD
                 _common_components_create_event_create_event_component__WEBPACK_IMPORTED_MODULE_10__["CreateEventComponent"],
                 _common_components_my_events_my_events_component__WEBPACK_IMPORTED_MODULE_11__["MyEventsComponent"],
                 _common_components_about_about_component__WEBPACK_IMPORTED_MODULE_12__["AboutComponent"],
+=======
+<<<<<<< HEAD
+                _common_components_my_events_my_events_component__WEBPACK_IMPORTED_MODULE_10__["MyEventsComponent"],
+=======
+
+                _common_components_my_events_my_events_component__WEBPACK_IMPORTED_MODULE_11__["MyEventsComponent"],
+
+                _common_components_about_about_component__WEBPACK_IMPORTED_MODULE_11__["AboutComponent"],
+
+>>>>>>> 185fe21df0bac2f2ea4fd2afaacc431db2d4fb6e
+>>>>>>> be14d10a5cf80b0f2a76a36c477986aec4e98159
             ],
             imports: [
                 _angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__["BrowserModule"],
@@ -192,6 +232,8 @@ var AppModule = /** @class */ (function () {
 
 /***/ }),
 
+<<<<<<< HEAD
+=======
 /***/ "./src/app/common/components/about/about.component.css":
 /*!*************************************************************!*\
   !*** ./src/app/common/components/about/about.component.css ***!
@@ -325,6 +367,7 @@ var CreateEventComponent = /** @class */ (function () {
 
 /***/ }),
 
+>>>>>>> 185fe21df0bac2f2ea4fd2afaacc431db2d4fb6e
 /***/ "./src/app/common/components/dashboard/dashboard.component.css":
 /*!*********************************************************************!*\
   !*** ./src/app/common/components/dashboard/dashboard.component.css ***!
@@ -332,7 +375,11 @@ var CreateEventComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
+<<<<<<< HEAD
+module.exports = ".left {\n    display: inline-block;\n    width: 675px;\n}\n.right {\n    display: inline-block;\n    width: 675px;\n    margin-left: 30px;\n}\n.leftside {\n    display: inline-block;\n    width: 400px;\n}\n.link {\n    border: none;\n    background-color: white;\n    color: blue;\n    text-decoration: underline;\n}\n.link2 {\n    border: none;\n    background-color: white;\n    color: blue;\n    font-size: 20px;\n}\n.underline {\n    border-bottom: 2px solid black;\n    border-top: 2px solid black;\n    text-align: center;\n}\n.form {\n    margin-left: 25px;\n    margin-right: 25px;\n}\n.table {\n    display: inline-block;\n    width: 240px;\n    text-align: center;\n}\n.add {\n    border-left: 2px solid black;\n    border-right: 2px solid black;\n    text-align: center;\n}\n.add1 {\n    text-align: center;\n}\n.add3 {\n    text-align: center;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvY29tbW9uL2NvbXBvbmVudHMvZGFzaGJvYXJkL2Rhc2hib2FyZC5jb21wb25lbnQuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0lBQ0kscUJBQXFCO0lBQ3JCLFlBQVk7QUFDaEI7QUFDQTtJQUNJLHFCQUFxQjtJQUNyQixZQUFZO0lBQ1osaUJBQWlCO0FBQ3JCO0FBRUE7SUFDSSxxQkFBcUI7SUFDckIsWUFBWTtBQUNoQjtBQUNBO0lBQ0ksWUFBWTtJQUNaLHVCQUF1QjtJQUN2QixXQUFXO0lBQ1gsMEJBQTBCO0FBQzlCO0FBQ0E7SUFDSSxZQUFZO0lBQ1osdUJBQXVCO0lBQ3ZCLFdBQVc7SUFDWCxlQUFlO0FBQ25CO0FBQ0E7SUFDSSw4QkFBOEI7SUFDOUIsMkJBQTJCO0lBQzNCLGtCQUFrQjtBQUN0QjtBQUNBO0lBQ0ksaUJBQWlCO0lBQ2pCLGtCQUFrQjtBQUN0QjtBQUNBO0lBQ0kscUJBQXFCO0lBQ3JCLFlBQVk7SUFDWixrQkFBa0I7QUFDdEI7QUFDQTtJQUNJLDRCQUE0QjtJQUM1Qiw2QkFBNkI7SUFDN0Isa0JBQWtCO0FBQ3RCO0FBQ0E7SUFDSSxrQkFBa0I7QUFDdEI7QUFDQTtJQUNJLGtCQUFrQjtBQUN0QiIsImZpbGUiOiJzcmMvYXBwL2NvbW1vbi9jb21wb25lbnRzL2Rhc2hib2FyZC9kYXNoYm9hcmQuY29tcG9uZW50LmNzcyIsInNvdXJjZXNDb250ZW50IjpbIi5sZWZ0IHtcbiAgICBkaXNwbGF5OiBpbmxpbmUtYmxvY2s7XG4gICAgd2lkdGg6IDY3NXB4O1xufVxuLnJpZ2h0IHtcbiAgICBkaXNwbGF5OiBpbmxpbmUtYmxvY2s7XG4gICAgd2lkdGg6IDY3NXB4O1xuICAgIG1hcmdpbi1sZWZ0OiAzMHB4O1xufVxuXG4ubGVmdHNpZGUge1xuICAgIGRpc3BsYXk6IGlubGluZS1ibG9jaztcbiAgICB3aWR0aDogNDAwcHg7XG59XG4ubGluayB7XG4gICAgYm9yZGVyOiBub25lO1xuICAgIGJhY2tncm91bmQtY29sb3I6IHdoaXRlO1xuICAgIGNvbG9yOiBibHVlO1xuICAgIHRleHQtZGVjb3JhdGlvbjogdW5kZXJsaW5lO1xufVxuLmxpbmsyIHtcbiAgICBib3JkZXI6IG5vbmU7XG4gICAgYmFja2dyb3VuZC1jb2xvcjogd2hpdGU7XG4gICAgY29sb3I6IGJsdWU7XG4gICAgZm9udC1zaXplOiAyMHB4O1xufVxuLnVuZGVybGluZSB7XG4gICAgYm9yZGVyLWJvdHRvbTogMnB4IHNvbGlkIGJsYWNrO1xuICAgIGJvcmRlci10b3A6IDJweCBzb2xpZCBibGFjaztcbiAgICB0ZXh0LWFsaWduOiBjZW50ZXI7XG59XG4uZm9ybSB7XG4gICAgbWFyZ2luLWxlZnQ6IDI1cHg7XG4gICAgbWFyZ2luLXJpZ2h0OiAyNXB4O1xufVxuLnRhYmxlIHtcbiAgICBkaXNwbGF5OiBpbmxpbmUtYmxvY2s7XG4gICAgd2lkdGg6IDI0MHB4O1xuICAgIHRleHQtYWxpZ246IGNlbnRlcjtcbn1cbi5hZGQge1xuICAgIGJvcmRlci1sZWZ0OiAycHggc29saWQgYmxhY2s7XG4gICAgYm9yZGVyLXJpZ2h0OiAycHggc29saWQgYmxhY2s7XG4gICAgdGV4dC1hbGlnbjogY2VudGVyO1xufVxuLmFkZDEge1xuICAgIHRleHQtYWxpZ246IGNlbnRlcjtcbn1cbi5hZGQzIHtcbiAgICB0ZXh0LWFsaWduOiBjZW50ZXI7XG59Il19 */"
+=======
 module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2NvbW1vbi9jb21wb25lbnRzL2Rhc2hib2FyZC9kYXNoYm9hcmQuY29tcG9uZW50LmNzcyJ9 */"
+>>>>>>> 185fe21df0bac2f2ea4fd2afaacc431db2d4fb6e
 
 /***/ }),
 
@@ -343,7 +390,11 @@ module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW
 /*! no static exports found */
 /***/ (function(module, exports) {
 
+<<<<<<< HEAD
+module.exports = "<div class=\"row\">\n  <div class=\"col\">\n    <div  style=\"text-align:center\"> \n      <h3>BIG BOY</h3>\n      <img src=\"/assets/images/andrew.jpg\" width=\"300\"><br>\n      <button class=\"link\" [routerLink]=\"['/events']\">My Events</button> \n    </div>  \n  </div>\n  <div class=\"col-6\">\n    <br><h4 class=\"underline\">Featured Restaurants</h4>\n    <div class=\"row\">\n      <div class=\"col add1\">\n        <h5>Upcoming</h5>\n        <h6>Hambones</h6>\n        <h6>Habuya</h6>\n      </div>\n      <div class=\"col add\">\n        <h5>Wish List</h5>\n        <h6>Stinking Rose</h6>\n        <h6>JR BBQ</h6>\n      </div>\n      <div class=\"col add3\">\n        <h5>Popular</h5>\n        <h6>placeholder</h6>\n        <h6>placeholder</h6>\n      </div>\n    </div><br>\n    \n    \n    \n    <button class=\"underline link2 col\" (click)=\"form()\">Create Event</button>\n    <form class=\"form\" (submit)=\"createEvent()\">\n      <div *ngIf=\"createForm\">\n        <div class=\"form-group\">\n          <br><label for=\"restaurant_name\">Restaurant name</label>\n          <input type=\"restaurant_name\" class=\"form-control\" id=\"restaurant_name\" placeholder=\"Restaurant name\"\n            name=\"createEvent.restaurant_name\" [(ngModel)]=\"createEvent.restaurant_name\">\n        </div>\n        <div class=\"form-group\">\n          <label for=\"date\">Date</label>\n          <input type=\"date\" class=\"form-control\" id=\"date\" placeholder=\"Date\"\n            name=\"createEvent.date\" [(ngModel)]=\"createEvent.date\">\n        </div>\n        <div class=\"form-group\">\n          <label for=\"time\">Time</label>\n          <input type=\"time\" class=\"form-control\" id=\"time\" placeholder=\"datetime\" \n            name=\"createEvent.time\" [(ngModel)]=\"createEvent.time\">\n        </div>\n        <div class=\"form-group\">\n            <label for=\"address\">Street Address</label>\n            <input type=\"text\" class=\"form-control\" id=\"address\" placeholder=\"Street Address\" \n              name=\"createEvent.address\" [(ngModel)]=\"createEvent.address\">\n        </div>\n        <div class=\"form-group\">\n            <label for=\"city\">City</label>\n            <input type=\"text\" class=\"form-control\" id=\"city\" placeholder=\"City\" \n              name=\"createEvent.city\" [(ngModel)]=\"createEvent.city\">\n        </div>\n        <button type=\"submit\" class=\"btn btn-primary\">Submit</button>\n        <button class=\"btn btn-primary\" style=\"margin-left: 10px\" (click)=\"cancel()\">Cancel</button>\n      </div>\n    \n      \n    </form>\n  \n  </div>\n  <div style=\"text-align:center\" class=\"col\">\n      <h4>My YumYum</h4><br>\n      <img src=\"/assets/images/innout.jpg\"   height=\"150\" width=\"150\"><br><br>\n      <img src=\"/assets/images/wingstop.jpg\"   height=\"150\" width=\"150\"><br><br>\n      <img src=\"/assets/images/blaze.jpg\"   height=\"150\" width=\"150\"><br><br>\n  </div>\n  "
+=======
 module.exports = "<p>\n  dashboard works!\n</p>\n"
+>>>>>>> 185fe21df0bac2f2ea4fd2afaacc431db2d4fb6e
 
 /***/ }),
 
@@ -369,6 +420,31 @@ var DashboardComponent = /** @class */ (function () {
     function DashboardComponent(router, http) {
         this.router = router;
         this.http = http;
+<<<<<<< HEAD
+        this.createForm = false;
+        this.create = {
+            user: '',
+            name: '',
+            date: null,
+            time: null,
+            address: '',
+            city: '',
+            zipcode: null,
+        };
+    }
+    DashboardComponent.prototype.ngOnInit = function () {
+    };
+    DashboardComponent.prototype.form = function () {
+        this.createForm = true;
+    };
+    DashboardComponent.prototype.cancel = function () {
+        this.createForm = false;
+    };
+    DashboardComponent.prototype.createEvent = function () {
+        var _this = this;
+        this.http.addObject(this.createEvent)
+            .subscribe(function (data) { return _this.create = data; });
+=======
     }
     DashboardComponent.prototype.ngOnInit = function () {
         this.checkLoggedIn();
@@ -378,6 +454,7 @@ var DashboardComponent = /** @class */ (function () {
         if (localStorage.length == 0) {
             this.router.navigateByUrl('');
         }
+>>>>>>> 185fe21df0bac2f2ea4fd2afaacc431db2d4fb6e
     };
     DashboardComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
@@ -683,6 +760,10 @@ Object(_angular_platform_browser_dynamic__WEBPACK_IMPORTED_MODULE_1__["platformB
 module.exports = __webpack_require__(/*! /Users/andrewquan/Desktop/FoodAppProj/foodapplication/public/src/main.ts */"./src/main.ts");
 
 
+<<<<<<< HEAD
+
+=======
+>>>>>>> 185fe21df0bac2f2ea4fd2afaacc431db2d4fb6e
 /***/ })
 
 },[[0,"runtime","vendor"]]]);
