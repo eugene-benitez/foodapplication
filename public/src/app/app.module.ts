@@ -8,7 +8,6 @@ import { LoginRegComponent } from './common/components/login-reg/login-reg.compo
 import { HttpClientModule } from '@angular/common/http';
 import { DashboardComponent } from './common/components/dashboard/dashboard.component';
 import { HttpService } from './common/services/http.service';
-import { CreateEventComponent } from './common/components/create-event/create-event.component';
 import { MyEventsComponent } from './common/components/my-events/my-events.component';
 
 @NgModule({
@@ -16,7 +15,6 @@ import { MyEventsComponent } from './common/components/my-events/my-events.compo
     AppComponent,
     LoginRegComponent,
     DashboardComponent,
-    CreateEventComponent,
     MyEventsComponent,
   ],
   imports: [
