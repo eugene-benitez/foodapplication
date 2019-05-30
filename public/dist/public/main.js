@@ -38,6 +38,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
 /* harmony import */ var _common_components_login_reg_login_reg_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./common/components/login-reg/login-reg.component */ "./src/app/common/components/login-reg/login-reg.component.ts");
 /* harmony import */ var _common_components_dashboard_dashboard_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./common/components/dashboard/dashboard.component */ "./src/app/common/components/dashboard/dashboard.component.ts");
+/* harmony import */ var _common_components_create_event_create_event_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./common/components/create-event/create-event.component */ "./src/app/common/components/create-event/create-event.component.ts");
+
 
 
 
@@ -46,6 +48,7 @@ __webpack_require__.r(__webpack_exports__);
 var routes = [
     { path: '', component: _common_components_login_reg_login_reg_component__WEBPACK_IMPORTED_MODULE_3__["LoginRegComponent"] },
     { path: 'dashboard', component: _common_components_dashboard_dashboard_component__WEBPACK_IMPORTED_MODULE_4__["DashboardComponent"] },
+    { path: 'new-event', component: _common_components_create_event_create_event_component__WEBPACK_IMPORTED_MODULE_5__["CreateEventComponent"] },
 ];
 var AppRoutingModule = /** @class */ (function () {
     function AppRoutingModule() {
@@ -81,7 +84,9 @@ module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<link rel=\"stylesheet\" href=\"https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css\">\n<script src=\"https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js\"></script>\n<script src=\"https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js\"></script>\n\n<!--The content below is only a placeholder and can be replaced.-->\n<div style=\"text-align:center\">\n  <h1>\n    Welcome to Food App!\n  </h1>\n\n  <img width=\"100\" alt=\"Angular Logo\"\n    src=\"data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==\">\n</div>\n\n\n\n<router-outlet></router-outlet>"
+
+module.exports = "<script src=\"https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js\"></script>\n<script src=\"https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js\"></script>\n<link rel=\"stylesheet\" href=\"https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css\">\n<script src=\"https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js\"></script>\n\n\n<!--The content below is only a placeholder and can be replaced.-->\n\n\n\n\n\n<nav class=\"navbar navbar-expand-sm bg-primary navbar-dark\">\n  <a class=\"navbar-brand\" href=\"#\">YumYum</a>\n  <button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarSupportedContent\"\n    aria-controls=\"navbarSupportedContent\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">\n    <span class=\"navbar-toggler-icon\"></span>\n  </button>\n  <div class=\"collapse navbar-collapse\" id=\"navbarSupportedContent\">\n    <ul class=\"navbar-nav mr-auto\">\n      <li class=\"nav-item active\">\n        <a class=\"nav-link\" href=\"#\">Home <span class=\"sr-only\">(current)</span></a>\n      </li>\n      <li class=\"nav-item\">\n        <a class=\"nav-link\" href=\"#\">About</a>\n      </li>\n      <li class=\"nav-item\">\n        <a class=\"nav-link\" href=\"#\">Support</a>\n      </li>\n    </ul>\n    <form class=\"form-inline my-2 my-lg-0\">\n      <input class=\"form-control mr-sm-2\" type=\"text\" placeholder=\"Search for food\" aria-label=\"Search\">\n      <button class=\"btn btn-outline-light my-2 my-sm-0\" type=\"submit\">Search</button>\n    </form>\n  </div>\n</nav>\n\n\n<div class=\"footer\">\n  <a href=\"https://linkedin.com\" target=\"_blank\">\n    <img src=\"/assets/images/linkedin.png\" height=\"35\" width=\"35\">\n  </a>\n  <a href=\"https://facebook.com\" target=\"_blank\">\n    <img src=\"/assets/images/facebook.png\" height=\"35\" width=\"35\">\n  </a>\n  <a href=\"https://twitter.com\" target=\"_blank\">\n    <img src=\"/assets/images/twitter.png\" height=\"35\" width=\"35\">\n  </a>\n</div>\n\n<router-outlet></router-outlet>"
+
 
 /***/ }),
 
@@ -137,6 +142,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/fesm5/http.js");
 /* harmony import */ var _common_components_dashboard_dashboard_component__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./common/components/dashboard/dashboard.component */ "./src/app/common/components/dashboard/dashboard.component.ts");
 /* harmony import */ var _common_services_http_service__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./common/services/http.service */ "./src/app/common/services/http.service.ts");
+/* harmony import */ var _common_components_create_event_create_event_component__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./common/components/create-event/create-event.component */ "./src/app/common/components/create-event/create-event.component.ts");
+
 
 
 
@@ -155,7 +162,8 @@ var AppModule = /** @class */ (function () {
             declarations: [
                 _app_component__WEBPACK_IMPORTED_MODULE_5__["AppComponent"],
                 _common_components_login_reg_login_reg_component__WEBPACK_IMPORTED_MODULE_6__["LoginRegComponent"],
-                _common_components_dashboard_dashboard_component__WEBPACK_IMPORTED_MODULE_8__["DashboardComponent"]
+                _common_components_dashboard_dashboard_component__WEBPACK_IMPORTED_MODULE_8__["DashboardComponent"],
+                _common_components_create_event_create_event_component__WEBPACK_IMPORTED_MODULE_10__["CreateEventComponent"],
             ],
             imports: [
                 _angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__["BrowserModule"],
@@ -168,6 +176,83 @@ var AppModule = /** @class */ (function () {
         })
     ], AppModule);
     return AppModule;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/common/components/create-event/create-event.component.css":
+/*!***************************************************************************!*\
+  !*** ./src/app/common/components/create-event/create-event.component.css ***!
+  \***************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = ".left {\n    display: inline-block;\n    width: 675px;\n}\n.right {\n    display: inline-block;\n    width: 675px;\n    margin-left: 30px;\n}\n.leftside {\n    display: inline-block;\n    width: 400px;\n}\n.link {\n    border: none;\n    background-color: white;\n    color: blue;\n    text-decoration: underline;\n}\n.underline {\n    border-bottom: 2px solid black;\n    border-top: 2px solid black;\n    text-align: center;\n\n}\n.form {\n    margin-left: 25px;\n    margin-right: 25px;\n}\n.table {\n    display: inline-block;\n    width: 240px;\n    text-align: center;\n}\n.add {\n    border-left: 2px solid black;\n    border-right: 2px solid black;\n    text-align: center;\n}\n.add1 {\n    text-align: center;\n}\n.add3 {\n    text-align: center;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvY29tbW9uL2NvbXBvbmVudHMvY3JlYXRlLWV2ZW50L2NyZWF0ZS1ldmVudC5jb21wb25lbnQuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0lBQ0kscUJBQXFCO0lBQ3JCLFlBQVk7QUFDaEI7QUFDQTtJQUNJLHFCQUFxQjtJQUNyQixZQUFZO0lBQ1osaUJBQWlCO0FBQ3JCO0FBRUE7SUFDSSxxQkFBcUI7SUFDckIsWUFBWTtBQUNoQjtBQUNBO0lBQ0ksWUFBWTtJQUNaLHVCQUF1QjtJQUN2QixXQUFXO0lBQ1gsMEJBQTBCO0FBQzlCO0FBQ0E7SUFDSSw4QkFBOEI7SUFDOUIsMkJBQTJCO0lBQzNCLGtCQUFrQjs7QUFFdEI7QUFDQTtJQUNJLGlCQUFpQjtJQUNqQixrQkFBa0I7QUFDdEI7QUFDQTtJQUNJLHFCQUFxQjtJQUNyQixZQUFZO0lBQ1osa0JBQWtCO0FBQ3RCO0FBQ0E7SUFDSSw0QkFBNEI7SUFDNUIsNkJBQTZCO0lBQzdCLGtCQUFrQjtBQUN0QjtBQUNBO0lBQ0ksa0JBQWtCO0FBQ3RCO0FBQ0E7SUFDSSxrQkFBa0I7QUFDdEIiLCJmaWxlIjoic3JjL2FwcC9jb21tb24vY29tcG9uZW50cy9jcmVhdGUtZXZlbnQvY3JlYXRlLWV2ZW50LmNvbXBvbmVudC5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyIubGVmdCB7XG4gICAgZGlzcGxheTogaW5saW5lLWJsb2NrO1xuICAgIHdpZHRoOiA2NzVweDtcbn1cbi5yaWdodCB7XG4gICAgZGlzcGxheTogaW5saW5lLWJsb2NrO1xuICAgIHdpZHRoOiA2NzVweDtcbiAgICBtYXJnaW4tbGVmdDogMzBweDtcbn1cblxuLmxlZnRzaWRlIHtcbiAgICBkaXNwbGF5OiBpbmxpbmUtYmxvY2s7XG4gICAgd2lkdGg6IDQwMHB4O1xufVxuLmxpbmsge1xuICAgIGJvcmRlcjogbm9uZTtcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiB3aGl0ZTtcbiAgICBjb2xvcjogYmx1ZTtcbiAgICB0ZXh0LWRlY29yYXRpb246IHVuZGVybGluZTtcbn1cbi51bmRlcmxpbmUge1xuICAgIGJvcmRlci1ib3R0b206IDJweCBzb2xpZCBibGFjaztcbiAgICBib3JkZXItdG9wOiAycHggc29saWQgYmxhY2s7XG4gICAgdGV4dC1hbGlnbjogY2VudGVyO1xuXG59XG4uZm9ybSB7XG4gICAgbWFyZ2luLWxlZnQ6IDI1cHg7XG4gICAgbWFyZ2luLXJpZ2h0OiAyNXB4O1xufVxuLnRhYmxlIHtcbiAgICBkaXNwbGF5OiBpbmxpbmUtYmxvY2s7XG4gICAgd2lkdGg6IDI0MHB4O1xuICAgIHRleHQtYWxpZ246IGNlbnRlcjtcbn1cbi5hZGQge1xuICAgIGJvcmRlci1sZWZ0OiAycHggc29saWQgYmxhY2s7XG4gICAgYm9yZGVyLXJpZ2h0OiAycHggc29saWQgYmxhY2s7XG4gICAgdGV4dC1hbGlnbjogY2VudGVyO1xufVxuLmFkZDEge1xuICAgIHRleHQtYWxpZ246IGNlbnRlcjtcbn1cbi5hZGQzIHtcbiAgICB0ZXh0LWFsaWduOiBjZW50ZXI7XG59Il19 */"
+
+/***/ }),
+
+/***/ "./src/app/common/components/create-event/create-event.component.html":
+/*!****************************************************************************!*\
+  !*** ./src/app/common/components/create-event/create-event.component.html ***!
+  \****************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<div class=\"row\">\n  <div style=\"text-align:center\" class=\"col\">\n    <button class=\"link\" [routerLink]=\"['/dashboard']\">Home</button> \n    <button class=\"link\" [routerLink]=\"['/events']\">My Events</button> \n  </div>\n  <div class=\"col-6\">\n    <h4 class=\"underline\">Featured Restaurants</h4>\n    <div class=\"row\">\n      <div class=\"col add1\">\n        <h5>Upcoming</h5>\n        <h6>placeholder</h6>\n        <h6>placeholder</h6>\n      </div>\n      <div class=\"col add\">\n        <h5>Wish List</h5>\n        <h6>placeholder</h6>\n        <h6>placeholder</h6>\n      </div>\n      <div class=\"col add3\">\n        <h5>Popular</h5>\n        <h6>placeholder</h6>\n        <h6>placeholder</h6>\n      </div>\n    </div><br>\n    \n    <h4 class=\"underline\">Schedule Event</h4>\n    <form class=\"form\" (submit)=\"createEvent()\">\n      <div class=\"form-group\">\n        <label for=\"restaurant_name\">Restaurant name</label>\n        <input type=\"restaurant_name\" class=\"form-control\" id=\"restaurant_name\" placeholder=\"Restaurant name\"\n          name=\"createEvent.restaurant_name\" [(ngModel)]=\"createEvent.restaurant_name\">\n      </div>\n      <div class=\"form-group\">\n        <label for=\"date\">Date</label>\n        <input type=\"date\" class=\"form-control\" id=\"date\" placeholder=\"Date\"\n          name=\"createEvent.date\" [(ngModel)]=\"createEvent.date\">\n      </div>\n      <div class=\"form-group\">\n        <label for=\"time\">Time</label>\n        <input type=\"time\" class=\"form-control\" id=\"time\" placeholder=\"datetime\" \n          name=\"createEvent.time\" [(ngModel)]=\"createEvent.time\">\n      </div>\n      <div class=\"form-group\">\n          <label for=\"address\">Street Address</label>\n          <input type=\"text\" class=\"form-control\" id=\"address\" placeholder=\"Street Address\" \n            name=\"createEvent.address\" [(ngModel)]=\"createEvent.address\">\n      </div>\n      <div class=\"form-group\">\n          <label for=\"city\">City</label>\n          <input type=\"text\" class=\"form-control\" id=\"city\" placeholder=\"City\" \n            name=\"createEvent.city\" [(ngModel)]=\"createEvent.city\">\n      </div>\n\n    \n      <button type=\"submit\" class=\"btn btn-primary\">Submit</button>\n    </form>\n  </div>\n  <div style=\"text-align:center\" class=\"col\">\n      <button class=\"link\" [routerLink]=\"['/']\">Logout</button> \n  </div>\n</div>\n<link rel=\"stylesheet\" href=\"https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css\">\n"
+
+/***/ }),
+
+/***/ "./src/app/common/components/create-event/create-event.component.ts":
+/*!**************************************************************************!*\
+  !*** ./src/app/common/components/create-event/create-event.component.ts ***!
+  \**************************************************************************/
+/*! exports provided: CreateEventComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CreateEventComponent", function() { return CreateEventComponent; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _services_http_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../services/http.service */ "./src/app/common/services/http.service.ts");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
+
+
+
+
+var CreateEventComponent = /** @class */ (function () {
+    function CreateEventComponent(router, http) {
+        this.router = router;
+        this.http = http;
+        this.create = {
+            user: '',
+            name: '',
+            date: null,
+            time: null,
+            address: '',
+            city: '',
+            zipcode: null,
+        };
+    }
+    CreateEventComponent.prototype.ngOnInit = function () {
+    };
+    CreateEventComponent.prototype.createEvent = function () {
+        var _this = this;
+        this.http.addObject(this.createEvent)
+            .subscribe(function (data) { return _this.create = data; });
+    };
+    CreateEventComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+            selector: 'app-create-event',
+            template: __webpack_require__(/*! ./create-event.component.html */ "./src/app/common/components/create-event/create-event.component.html"),
+            styles: [__webpack_require__(/*! ./create-event.component.css */ "./src/app/common/components/create-event/create-event.component.css")]
+        }),
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_angular_router__WEBPACK_IMPORTED_MODULE_3__["Router"],
+            _services_http_service__WEBPACK_IMPORTED_MODULE_2__["HttpService"]])
+    ], CreateEventComponent);
+    return CreateEventComponent;
 }());
 
 
@@ -426,7 +511,8 @@ Object(_angular_platform_browser_dynamic__WEBPACK_IMPORTED_MODULE_1__["platformB
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! /Users/eugenebenitez/Desktop/MEAN_Stack/Angular/foodapplication/public/src/main.ts */"./src/main.ts");
+module.exports = __webpack_require__(/*! /Users/andrewquan/Desktop/FoodAppProj/foodapplication/public/src/main.ts */"./src/main.ts");
+
 
 
 /***/ })

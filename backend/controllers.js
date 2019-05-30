@@ -1,20 +1,33 @@
 const Object = require('./models');
 const User = require('./userModel')
-
+const bcrypt = require('bcryptjs');
 
 module.exports = {
 
 
     login: (req, res) => {
         const loginUser = req.body;
-        User.findOne({ email: loginUser.email, password: loginUser.password })
-            .then(data => res.json(data))
+        const returnedUser = Object;
+
+        User.findOne({ email: loginUser.email })
+            .then(data => {
+                console.log(data);
+                const status = bcrypt.compareSync(loginUser.password, data.password);
+
+                if (status) {
+                    return res.json(data);
+                }
+                return null;
+            })
             .catch(err => res.json(err));
+
     },
 
 
     register: (req, res) => {
         const newUser = req.body;
+        newUser.password = bcrypt.hashSync(newUser.password, 10);
+
         User.create(newUser)
             .then(data => res.json(data))
             .catch(err => res.json(err));
