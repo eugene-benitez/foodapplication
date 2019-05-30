@@ -353,12 +353,25 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "DashboardComponent", function() { return DashboardComponent; });
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
+/* harmony import */ var _services_http_service__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../services/http.service */ "./src/app/common/services/http.service.ts");
+
+
 
 
 var DashboardComponent = /** @class */ (function () {
-    function DashboardComponent() {
+    function DashboardComponent(router, http) {
+        this.router = router;
+        this.http = http;
     }
     DashboardComponent.prototype.ngOnInit = function () {
+        this.checkLoggedIn();
+        console.log(localStorage);
+    };
+    DashboardComponent.prototype.checkLoggedIn = function () {
+        if (localStorage.length == 0) {
+            this.router.navigateByUrl('');
+        }
     };
     DashboardComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
@@ -366,7 +379,8 @@ var DashboardComponent = /** @class */ (function () {
             template: __webpack_require__(/*! ./dashboard.component.html */ "./src/app/common/components/dashboard/dashboard.component.html"),
             styles: [__webpack_require__(/*! ./dashboard.component.css */ "./src/app/common/components/dashboard/dashboard.component.css")]
         }),
-        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [])
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_angular_router__WEBPACK_IMPORTED_MODULE_2__["Router"],
+            _services_http_service__WEBPACK_IMPORTED_MODULE_3__["HttpService"]])
     ], DashboardComponent);
     return DashboardComponent;
 }());
@@ -393,7 +407,7 @@ module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"container\">\n  <div class=\"row\">\n    <div class=\"col\">\n\n      <h1>Registration:</h1>\n      <br>\n      <form (submit)=\"register()\">\n        <div class=\"form-group\">\n          <label for=\"exampleInputPassword1\">first_name</label>\n          <input type=\"first_name\" class=\"form-control\" id=\"exampleInputfirst_name1\" placeholder=\"first_name\"\n            name=\"createUser.first_name\" [(ngModel)]=\"createUser.first_name\">\n        </div>\n        <div class=\"form-group\">\n          <label for=\"exampleInputPassword1\">last_name</label>\n          <input type=\"last_name\" class=\"form-control\" id=\"exampleInputlast_name1\" placeholder=\"last_name\"\n            name=\"createUser.last_name\" [(ngModel)]=\"createUser.last_name\">\n        </div>\n        <div class=\"form-group\">\n          <label for=\"exampleInputEmail1\">Email address</label>\n          <input type=\"email\" class=\"form-control\" id=\"exampleInputEmail1\" aria-describedby=\"emailHelp\"\n            placeholder=\"Enter email\" name=\"createUser.email\" [(ngModel)]=\"createUser.email\">\n          <small id=\"emailHelp\" class=\"form-text text-muted\">We'll never share your email with anyone else.</small>\n        </div>\n        <div class=\"form-group\">\n          <label for=\"exampleInputPassword1\">Password</label>\n          <input type=\"password\" class=\"form-control\" id=\"exampleInputPassword1\" placeholder=\"Password\"\n            name=\"createUser.password\" [(ngModel)]=\"createUser.password\">\n        </div>\n        <button type=\"submit\" class=\"btn btn-primary\">Submit</button>\n      </form>\n\n    </div>\n\n\n    <div class=\"col\">\n      <h1>Login:</h1>\n      <br>\n      <form (submit)=\"login()\">\n        <div class=\"form-group\">\n          <label for=\"exampleInputEmail1\">Email address</label>\n          <input type=\"email\" class=\"form-control\" aria-describedby=\"emailHelp\" placeholder=\"Enter email\"\n            name=\"loginUser.email\" [(ngModel)]=\"loginUser.email\">\n          <small id=\"emailHelp\" class=\"form-text text-muted\">We'll never share your email with anyone else.</small>\n        </div>\n        <div class=\"form-group\">\n          <label for=\"exampleInputPassword1\">Password</label>\n          <input type=\"password\" class=\"form-control\" placeholder=\"Password\" name=\"loginUser.password\"\n            [(ngModel)]=\"loginUser.password\">\n        </div>\n        <button type=\"submit\" class=\"btn btn-primary\">Login</button>\n      </form>\n    </div>\n\n\n  </div>\n</div>"
+module.exports = "<br>\n<div class=\"container\">\n  <div class=\"row\">\n    <div class=\"col\">\n\n      <h1>Registration:</h1>\n      <br>\n      <form (submit)=\"register()\">\n        <div class=\"form-group\">\n          <label for=\"exampleInputPassword1\">First Name:</label>\n          <input type=\"first_name\" class=\"form-control\" id=\"exampleInputfirst_name1\" placeholder=\"first_name\"\n            name=\"createUser.first_name\" [(ngModel)]=\"createUser.first_name\">\n          <small style=\"color:red\">{{UserError.first_name}}</small>\n        </div>\n        <div class=\"form-group\">\n          <label for=\"exampleInputPassword1\">Last Name:</label>\n          <input type=\"last_name\" class=\"form-control\" id=\"exampleInputlast_name1\" placeholder=\"last_name\"\n            name=\"createUser.last_name\" [(ngModel)]=\"createUser.last_name\">\n          <small style=\"color:red\">{{UserError.last_name}}</small>\n        </div>\n        <div class=\"form-group\">\n          <label for=\"exampleInputEmail1\">Email Address:</label>\n          <input type=\"email\" class=\"form-control\" id=\"exampleInputEmail1\" aria-describedby=\"emailHelp\"\n            placeholder=\"Enter email\" name=\"createUser.email\" [(ngModel)]=\"createUser.email\">\n          <small id=\"emailHelp\" class=\"form-text text-muted\">We'll never share your email with anyone else.</small>\n          <small style=\"color:red\">{{UserError.email}}</small>\n        </div>\n        <div class=\"form-group\">\n          <label for=\"exampleInputPassword1\">Password:</label>\n          <input type=\"password\" class=\"form-control\" id=\"exampleInputPassword1\" placeholder=\"Password\"\n            name=\"createUser.password\" [(ngModel)]=\"createUser.password\">\n          <small style=\"color:red\">{{UserError.password}}</small>\n          <br>\n        </div>\n        <button type=\"submit\" class=\"btn btn-primary\">Submit</button>\n      </form>\n\n    </div>\n\n\n    <div class=\"col\">\n      <h1>Login:</h1>\n      <br>\n      <small style=\"color:red\">{{loginError}}</small>\n      <form (submit)=\"login()\">\n        <div class=\"form-group\">\n          <label for=\"exampleInputEmail1\">Email address</label>\n          <input type=\"email\" class=\"form-control\" aria-describedby=\"emailHelp\" placeholder=\"Enter email\"\n            name=\"loginUser.email\" [(ngModel)]=\"loginUser.email\">\n          <small id=\"emailHelp\" class=\"form-text text-muted\">We'll never share your email with anyone else.</small>\n        </div>\n        <div class=\"form-group\">\n          <label for=\"exampleInputPassword1\">Password</label>\n          <input type=\"password\" class=\"form-control\" placeholder=\"Password\" name=\"loginUser.password\"\n            [(ngModel)]=\"loginUser.password\">\n        </div>\n        <button type=\"submit\" class=\"btn btn-primary\">Login</button>\n      </form>\n    </div>\n\n\n  </div>\n</div>"
 
 /***/ }),
 
@@ -429,14 +443,36 @@ var LoginRegComponent = /** @class */ (function () {
             email: '',
             password: '',
         };
+        this.UserError = {
+            first_name: '',
+            last_name: '',
+            email: '',
+            password: '',
+        };
     }
     LoginRegComponent.prototype.ngOnInit = function () {
+        localStorage.clear();
     };
     LoginRegComponent.prototype.register = function () {
         var _this = this;
         console.log(this.createUser);
         this.http.register(this.createUser)
-            .subscribe(function (data) { return _this.returnData = data; });
+            .subscribe(function (data) {
+            _this.UserError = {
+                first_name: '',
+                last_name: '',
+                email: '',
+                password: '',
+            };
+            if (!data['errors']) {
+                _this.router.navigateByUrl('');
+            }
+            else {
+                for (var k in data['errors']) {
+                    _this.UserError[k] = data['errors'][k]['message'];
+                }
+            }
+        });
     };
     LoginRegComponent.prototype.login = function () {
         var _this = this;
@@ -444,12 +480,15 @@ var LoginRegComponent = /** @class */ (function () {
         this.http.login(this.loginUser)
             .subscribe(function (data) {
             _this.returnData = data;
-            if (_this.loginUser.email == _this.returnData.email && _this.loginUser.password == _this.returnData.password) {
-                localStorage.setItem('userID', _this.returnData._id.toString());
-                console.log(localStorage.userID);
+            if (_this.returnData.password) {
+                console.log(data);
+                console.log("Login success!");
+                localStorage.setItem('user._id', _this.returnData._id);
+                console.log(localStorage);
                 _this.router.navigateByUrl('dashboard');
             }
             else {
+                _this.loginError = "Invalid Login.";
                 return console.log("Invalid Login");
             }
         });
