@@ -5792,7 +5792,6 @@ __webpack_require__(/*! /Users/andrewquan/Desktop/FoodAppProj/foodapplication/pu
 module.exports = __webpack_require__(/*! /Users/andrewquan/Desktop/FoodAppProj/foodapplication/public/node_modules/@angular-devkit/build-angular/src/angular-cli-files/models/jit-polyfills.js */"./node_modules/@angular-devkit/build-angular/src/angular-cli-files/models/jit-polyfills.js");
 
 
-
 /***/ })
 
 },[[2,"runtime"]]]);
