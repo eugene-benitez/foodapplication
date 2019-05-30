@@ -1,11 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
 
 .footer {
-<<<<<<< HEAD
-    position: fixed;
-=======
     position: bottom;
->>>>>>> 185fe21df0bac2f2ea4fd2afaacc431db2d4fb6e
     left: 0;
     bottom: 0;
     width: 100%;
