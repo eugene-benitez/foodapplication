@@ -7022,8 +7022,14 @@ for (var collections = getKeys(DOMIterables), i = 0; i < collections.length; i++
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
+<<<<<<< HEAD
 __webpack_require__(/*! /Users/toshiro/Desktop/FoodAppProj/foodapplication/public/node_modules/@angular-devkit/build-angular/src/angular-cli-files/models/es2015-polyfills.js */"./node_modules/@angular-devkit/build-angular/src/angular-cli-files/models/es2015-polyfills.js");
 module.exports = __webpack_require__(/*! /Users/toshiro/Desktop/FoodAppProj/foodapplication/public/node_modules/@angular-devkit/build-angular/src/angular-cli-files/models/es2015-jit-polyfills.js */"./node_modules/@angular-devkit/build-angular/src/angular-cli-files/models/es2015-jit-polyfills.js");
+=======
+
+__webpack_require__(/*! /Users/eugenebenitez/Desktop/MEAN_Stack/Angular/foodapplication/public/node_modules/@angular-devkit/build-angular/src/angular-cli-files/models/es2015-polyfills.js */"./node_modules/@angular-devkit/build-angular/src/angular-cli-files/models/es2015-polyfills.js");
+module.exports = __webpack_require__(/*! /Users/eugenebenitez/Desktop/MEAN_Stack/Angular/foodapplication/public/node_modules/@angular-devkit/build-angular/src/angular-cli-files/models/es2015-jit-polyfills.js */"./node_modules/@angular-devkit/build-angular/src/angular-cli-files/models/es2015-jit-polyfills.js");
+>>>>>>> 185fe21df0bac2f2ea4fd2afaacc431db2d4fb6e
 
 
 /***/ })
