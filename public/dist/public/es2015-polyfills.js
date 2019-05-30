@@ -2644,10 +2644,7 @@ var hex = /^[-+]?0[xX]/;
 
 module.exports = $parseInt(ws + '08') !== 8 || $parseInt(ws + '0x16') !== 22 ? function parseInt(str, radix) {
   var string = $trim(String(str), 3);
-  return $parseInt(string, (radix 
-                            >>
-                            
-                      0) || (hex.test(string) ? 16 : 10));
+  return $parseInt(string, (radix >>> 0) || (hex.test(string) ? 16 : 10));
 } : $parseInt;
 
 
@@ -7025,9 +7022,8 @@ for (var collections = getKeys(DOMIterables), i = 0; i < collections.length; i++
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-
-__webpack_require__(/*! /Users/andrewquan/Desktop/FoodAppProj/foodapplication/public/node_modules/@angular-devkit/build-angular/src/angular-cli-files/models/es2015-polyfills.js */"./node_modules/@angular-devkit/build-angular/src/angular-cli-files/models/es2015-polyfills.js");
-module.exports = __webpack_require__(/*! /Users/andrewquan/Desktop/FoodAppProj/foodapplication/public/node_modules/@angular-devkit/build-angular/src/angular-cli-files/models/es2015-jit-polyfills.js */"./node_modules/@angular-devkit/build-angular/src/angular-cli-files/models/es2015-jit-polyfills.js");
+__webpack_require__(/*! /Users/toshiro/Desktop/FoodAppProj/foodapplication/public/node_modules/@angular-devkit/build-angular/src/angular-cli-files/models/es2015-polyfills.js */"./node_modules/@angular-devkit/build-angular/src/angular-cli-files/models/es2015-polyfills.js");
+module.exports = __webpack_require__(/*! /Users/toshiro/Desktop/FoodAppProj/foodapplication/public/node_modules/@angular-devkit/build-angular/src/angular-cli-files/models/es2015-jit-polyfills.js */"./node_modules/@angular-devkit/build-angular/src/angular-cli-files/models/es2015-jit-polyfills.js");
 
 
 /***/ })

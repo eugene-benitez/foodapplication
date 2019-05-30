@@ -9,6 +9,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { DashboardComponent } from './common/components/dashboard/dashboard.component';
 import { HttpService } from './common/services/http.service';
 import { CreateEventComponent } from './common/components/create-event/create-event.component';
+import { MyEventsComponent } from './common/components/my-events/my-events.component';
 
 @NgModule({
   declarations: [
@@ -16,6 +17,7 @@ import { CreateEventComponent } from './common/components/create-event/create-ev
     LoginRegComponent,
     DashboardComponent,
     CreateEventComponent,
+    MyEventsComponent,
   ],
   imports: [
     BrowserModule,
